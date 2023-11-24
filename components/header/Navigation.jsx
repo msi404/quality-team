@@ -5,7 +5,7 @@ import Logo from '@/public/Logo.png'
 function Navigation ()
 {
 	return (
-	<NavigationMenu.Root className='w-screen h-16 bg-gradient-to-r from-indigo-900 to-indigo-600 flex items-center justify-between p-5 px-40 text-slate-50'>
+	<NavigationMenu.Root className='sticky top-0 h-16 bg-gradient-to-r z-10 from-indigo-900 to-indigo-600 flex items-center justify-between p-5 md:px-24 text-slate-50'>
 			<NavigationMenu.List>
 				<NavigationMenu.Item>
 					<NavigationMenu.Link>

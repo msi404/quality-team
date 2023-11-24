@@ -3,7 +3,7 @@ import { FaFacebookF, FaInstagram, FaTiktok} from "react-icons/fa";
 function Footer ()
 {
 	return (
-		<div className="w-screen h-16 bg-gradient-to-r from-indigo-900 to-indigo-600 flex items-center justify-between p-5 px-16 text-slate-200">
+		<div className="h-16 bg-gradient-to-r from-indigo-900 to-indigo-600 flex items-center justify-between p-5 md:px-24 text-slate-200">
 			<div>
 				<h1>Copyright | QualityTeam</h1>
 			</div>

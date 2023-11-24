@@ -7,7 +7,7 @@ function Layout ( { children } )
 	return (
 		<Fragment>
 		<Navigation />
-		<main className='p-5 px-40'>
+		<main>
 			{children}
 			</main>
 		<Footer />
