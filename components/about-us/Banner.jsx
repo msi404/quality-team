@@ -34,8 +34,8 @@ function Banner ()
 				{ !isMinWidthMedium ? (
 				<ImagesCollection>
 				<motion.div style={{x}} className='flex space-x-5'>
-						{ images.map( ( image ) => (
-						<Image className='rounded-3xl' width={250} height={250} src={image}/>
+						{ images.map( ( image,index) => (
+						<Image key={index} className='rounded-3xl' width={250} height={250} src={image}/>
 					))}
 				</motion.div>
 			</ImagesCollection>	
