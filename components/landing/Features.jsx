@@ -15,7 +15,7 @@ function Features ()
 	return (
 		<Container background='bg-slate-100'>
 			<div className='flex justify-center'>
-			<HStack spacing='space-x-10'>
+			<HStack responsive spacing='space-y-10 lg:space-x-10'>
 			<VStack>
 					<Image className='rounded-3xl' width={500} height={500} src={LandingImage} />
 			</VStack>
