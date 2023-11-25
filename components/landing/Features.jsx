@@ -7,6 +7,9 @@ import Text from '@/components/ui/Text'
 import Fotonote from '@/components/ui/Fotonote'
 import List from '@/components/ui/List'
 import ListItem from '@/components/ui/ListItem'
+import Image from 'next/image'
+import LandingImage from '@/public/landing-image-1.png'
+import {motion} from 'framer-motion'
 function Features ()
 {
 	return (
@@ -14,11 +17,12 @@ function Features ()
 			<div className='flex justify-center'>
 			<HStack spacing='space-x-10'>
 			<VStack>
-					<Header color='green'>Company Overview</Header>
+					<Image className='rounded-3xl' width={500} height={500} src={LandingImage} />
 			</VStack>
 			<VStack spacing='space-y-10'>
-					<Header color='green'>Company Overview</Header>
-						<Title>What Makes<br />Quality Team Different</Title>
+					<Header animate color='green'>Company Overview</Header>
+						<Title animate delay={0.2}>What Makes<br />Quality Team Different</Title>
+						<motion.div initial={{opacity:0,translateY:'30px'}} whileInView={{opacity:1,translateY:'0px',transition:{'duration':0.4,'delay':0.2}}} viewport={{once:false,amount:0.90}}>
 						<HStack spaceBetween>
 							<List>
 							<VStack spacing='space-y-6'>
@@ -53,6 +57,7 @@ function Features ()
 							</VStack>
 							</List>
 						</HStack>
+						</motion.div>
 					</VStack>
 				</HStack>
 			</div>
