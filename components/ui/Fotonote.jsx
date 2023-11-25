@@ -1,7 +1,7 @@
-function Fotonote ({children})
+function Fotonote ({children,color='white'})
 {
 	return (
-		<h1 className="text-slate-400">{children}</h1>
+		<h1 className="text-slate-400" style={{color:color}}>{children}</h1>
 	)
 }
 

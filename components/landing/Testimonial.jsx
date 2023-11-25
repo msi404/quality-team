@@ -4,6 +4,8 @@ import Description from '@/components/ui/Description'
 import Card from '@/components/ui/Card'
 import Header from '@/components/ui/Header'
 import VStack from '@/components/ui/VStack'
+import HStack from '@/components/ui/HStack'
+import Brands from '@/components/landing/Brands'
 import Container from '@/components/ui/Container'
 import * as Avatar from '@radix-ui/react-avatar';
 import {motion} from 'framer-motion'
@@ -18,7 +20,10 @@ function Testimonial ()
 				<Description delay={0.4} animate width='full' align='text-center' color='gray'>
 					These wonderful companies have been with us from the<br /> beginning
 				</Description>
-			</div>
+				</div>
+				<motion.div initial={ { opacity: 0, translateY: '40px' } } whileInView={ { opacity: 1, translateY: '0px',transition:{'duration':0.3,'delay':0.3}} } viewport={ { once:false,amount:0.8}} className='grayscale'>
+					<Brands />
+				</motion.div>
 			<div className='flex flex-col items-center md:items-stretch md:flex-row gap-10'>
 				<Card animate>
 					<div className='space-y-12'>
