@@ -1,5 +1,5 @@
-import Container from '@/components/ui/Container'
-import HStack from '@/components/ui/HStack'
+import ContainerFluid from '@/components/ui/ContainerFluid'
+import HStack from '@/components/ui/HStack';
 import VStack from '@/components/ui/VStack'
 import Header from '@/components/ui/Header'
 import Title from '@/components/ui/Title'
@@ -13,7 +13,7 @@ import {motion} from 'framer-motion'
 function Features ()
 {
 	return (
-		<Container background='bg-slate-100'>
+		<ContainerFluid background='bg-slate-100'>
 			<div className='flex justify-center'>
 			<HStack responsive spacing='space-y-10 lg:space-x-10'>
 			<VStack>
@@ -61,7 +61,7 @@ function Features ()
 					</VStack>
 				</HStack>
 			</div>
-		</Container>
+		</ContainerFluid>
 	)
 }
 

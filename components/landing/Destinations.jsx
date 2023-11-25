@@ -1,4 +1,4 @@
-import Container from '@/components/ui/Container'
+import ContainerFluid from '@/components/ui/ContainerFluid'
 import HStack from '@/components/ui/HStack'
 import VStack from '@/components/ui/VStack'
 import Text from '@/components/ui/Text'
@@ -15,7 +15,7 @@ import Image from 'next/image'
 function Destinations ()
 {
 	return (
-		<Container>
+		<ContainerFluid>
 			<div className='flex justify-center'>
 				<HStack responsive spacing='space-y-10 lg:space-x-10'>
 					<VStack spacing='space-y-10'>
@@ -54,7 +54,7 @@ function Destinations ()
 							</VStack>
 							</List>
 							</HStack>
-							<Button variant='bg-purple-400' active='active:bg-purple-500' hover='hover:bg-purple-600'>Learn More</Button>
+							        <Button variant='bg-purple-400' active='active:bg-purple-400' hover='hover:bg-purple-600'>Learn More</Button>
 						</motion.div>
 					</VStack>
 					<VStack>
@@ -62,7 +62,7 @@ function Destinations ()
 					</VStack>
 				</HStack>
 			</div>
-		</Container>
+		</ContainerFluid>
 	)
 }
 

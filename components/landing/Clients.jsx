@@ -1,4 +1,4 @@
-import Container from '@/components/ui/Container'
+import ContainerFluid from '@/components/ui/ContainerFluid'
 import HStack from '@/components/ui/HStack'
 import VStack from '@/components/ui/VStack'
 import Text from '@/components/ui/Text'
@@ -16,7 +16,7 @@ import Image from 'next/image'
 function Clients ()
 {
 	return (
-		<Container background='bg-slate-100'>
+		<ContainerFluid background='bg-slate-100'>
 			<div className='flex justify-center'>
 				<HStack responsive spacing='space-y-10 lg:space-x-10'>
 					<VStack>
@@ -58,12 +58,12 @@ function Clients ()
 							</VStack>
 							</List>
 							</HStack>
-							<Button variant='bg-green-400' active='active:bg-green-500' hover='hover:bg-green-600'>Learn More</Button>
+							    <Button variant='bg-green-400' active='active:bg-green-400' hover='hover:bg-green-600'>Learn More</Button>
 						</motion.div>
 					</VStack>
 				</HStack>
 			</div>
-		</Container>
+		</ContainerFluid>
 	)
 }
 

@@ -1,3 +1,4 @@
+import ContainerFluid from '@/components/ui/ContainerFluid'
 import Text from '@/components/ui/Text';
 import Fotonote from '@/components/ui/Fotonote'
 import Description from '@/components/ui/Description'
@@ -6,13 +7,12 @@ import Header from '@/components/ui/Header'
 import VStack from '@/components/ui/VStack'
 import HStack from '@/components/ui/HStack'
 import Brands from '@/components/landing/Brands'
-import Container from '@/components/ui/Container'
 import * as Avatar from '@radix-ui/react-avatar';
 import {motion} from 'framer-motion'
 function Testimonial ()
 {	
 	return (
-		<Container>
+		<ContainerFluid>
 			<VStack spacing='space-y-10'>
 			<div className='space-y-5 lg:space-y-10 text-center'>
 				<Text animate color='text-green-400'>Our Amazing</Text>
@@ -69,7 +69,7 @@ function Testimonial ()
 				</Card>
 			</div>
 			</VStack>
-		</Container>
+		</ContainerFluid>
 	)
 }
 

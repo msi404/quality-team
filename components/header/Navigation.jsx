@@ -36,7 +36,7 @@ function Navigation ()
 				</NavigationMenu.Item>
 				<NavigationMenu.Item>
 					<NavigationMenu.Link>
-        <Button variant='bg-green-500' active='active:bg-green-800' hover='hover:bg-green-600'>
+        <Button variant='bg-green-400' active='active:bg-green-400' hover='hover:bg-green-600'>
           Subsecribe Now
         </Button>
 					</NavigationMenu.Link>
