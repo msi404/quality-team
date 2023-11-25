@@ -20,39 +20,39 @@ function Features ()
 					<Image className='rounded-3xl' width={500} height={500} src={LandingImage} />
 			</VStack>
 			<VStack spacing='space-y-10'>
-					<Header animate color='green'>Company Overview</Header>
-						<Title animate delay={0.2}>What Makes<br />Quality Team Different</Title>
+					<Header animate color='text-green-400'>Company Overview</Header>
+						<Title color='text-slate-700' animate delay={0.2}>What Makes<br />Quality Team Different</Title>
 						<motion.div initial={{opacity:0,translateY:'30px'}} whileInView={{opacity:1,translateY:'0px',transition:{'duration':0.4,'delay':0.2}}} viewport={{once:false,amount:0.90}}>
 						<HStack spaceBetween>
 							<List>
 							<VStack spacing='space-y-6'>
 							<ListItem>
-							<Fotonote color='green'>01</Fotonote>
-							<Text color='gray'>Contextual, dofollow links<br/>from high authority sites.</Text>
+							<Fotonote color='text-green-400'>01</Fotonote>
+							<Text color='text-slate-500'>Contextual, dofollow links<br/>from high authority sites.</Text>
 							</ListItem>
 							<ListItem>
-							<Fotonote color='green'>03</Fotonote>
-							<Text color='gray'>800+ word articles from<br/>quality writers.</Text>
+							<Fotonote color='text-green-400'>03</Fotonote>
+							<Text color='text-slate-500'>800+ word articles from<br/>quality writers.</Text>
 							</ListItem>
 							<ListItem>
-							<Fotonote color='green'>05</Fotonote>
-							<Text color='gray'>Dozens of relevant niches to<br/>choose from</Text>
+							<Fotonote color='text-green-400'>05</Fotonote>
+							<Text color='text-slate-500'>Dozens of relevant niches to<br/>choose from</Text>
 							</ListItem>
 							</VStack>
 							</List>
 							<List>
 							<VStack spacing='space-y-6'>
 							<ListItem>
-							<Fotonote color='green'>02</Fotonote>
-							<Text color='gray'>Choose the keywords you<br/>want to rank for.</Text>
+							<Fotonote color='text-green-400'>02</Fotonote>
+							<Text color='text-slate-500'>Choose the keywords you<br/>want to rank for.</Text>
 							</ListItem>
 							<ListItem>
-							<Fotonote color='green'>04</Fotonote>
-							<Text color='gray'>Each site receives a minimum<br/>of 500 organic visits a month.</Text>
+							<Fotonote color='text-green-400'>04</Fotonote>
+							<Text color='text-slate-500'>Each site receives a minimum<br/>of 500 organic visits a month.</Text>
 							</ListItem>
 							<ListItem>
-							<Fotonote color='green'>06</Fotonote>
-							<Text color='gray'>Guaranteed to last 12 months,<br/>or it’s on us.</Text>
+							<Fotonote color='text-green-400'>06</Fotonote>
+							<Text color='text-slate-500'>Guaranteed to last 12 months,<br/>or it’s on us.</Text>
 							</ListItem>
 							</VStack>
 							</List>

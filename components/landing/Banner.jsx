@@ -15,14 +15,14 @@ function Banner ()
           Natural, Clean <br />
           Backlinks Built For You
         </Headline>
-        <Description>
+        <Description width='md:w-120'>
           We help you develop a reputable backlink profile by building contextual,
           dofollow links that will increase your search engine rankings and your site’s traffic.
         </Description>
     </VStack>
       </div>
       <div className='mt-12'>
-        <Button>
+        <Button variant='bg-green-500' active='active:bg-green-800' hover='hover:bg-green-600'>
           Subsecribe Now
         </Button>
       </div>

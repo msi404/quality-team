@@ -1,7 +1,7 @@
-function TinyText ({children, color='white'})
+function TinyText ({children, color='text-slate-100'})
 {
 	return (
-		<p className="text-xs font-light text-center" style={{color: color}}>{children}</p>
+		<p className={`text-xs font-light text-center ${color}`}>{children}</p>
 	)
 }
 

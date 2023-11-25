@@ -1,7 +1,7 @@
-function Button ({children})
+function Button ({children,variant,active,hover})
 {
 	return (
-		<button className="bg-green-500 text-slate-900 p-3 rounded-full active:bg-green-600 hover:bg-green-400 transition-all">
+		<button className={`${variant} text-slate-900 p-3 rounded-full ${active} ${hover} transition-all`}>
 			{children}
 		</button>
 	)

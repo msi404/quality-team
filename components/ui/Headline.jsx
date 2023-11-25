@@ -1,7 +1,7 @@
-function Headline ({children, color='white',align='md:text-start'})
+function Headline ({children, color='text-slate-100',align='md:text-start'})
 {
 	return (
-		<h1 className={`font-bold text-center ${align} text-7xl`} style={ { color: color}}>{children}</h1>
+		<h1 className={`font-bold text-center ${align} text-7xl ${color}`}>{children}</h1>
 	)
 }
 

@@ -15,7 +15,7 @@ function Testimonial ()
 		<Container>
 			<VStack spacing='space-y-10'>
 			<div className='space-y-5 lg:space-y-10 text-center'>
-				<Text animate color='green'>Our Amazing</Text>
+				<Text animate color='text-green-400'>Our Amazing</Text>
 				<Header delay={0.3} animate size='lg:text-7xl' align='text-center' color='black'>Clients</Header>
 				<Description delay={0.4} animate width='full' align='text-center' color='gray'>
 					These wonderful companies have been with us from the<br /> beginning
