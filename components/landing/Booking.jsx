@@ -13,9 +13,11 @@ function Booking ()
 					We help boost revenues for businesses like yours through proven strategies that will turn your
 					<br />website into a lead-attracting, profit-generating machine..
 				</Description>
-        <Button variant='bg-green-400' active='active:bg-green-400' hover='hover:bg-green-600'>
-          Schedule A Call
-		</Button>
+			<a href="tel:07827131748">
+			<Button variant='bg-green-400' active='active:bg-green-400' hover='hover:bg-green-600'>
+					Make A Call
+			</Button>
+			 </a>
 			</VStack>
 		</ContainerFuild>
 	)

@@ -29,10 +29,10 @@ function Testimonial ()
 					<div className='space-y-12'>
 				<div className='space-y-5'>
 					<Header>
-						Working with Shortlist was a great experience
+						Working with QualityTeam was a great experience
 					</Header>
 					<Description width='w-40'>
-						Shortlist has been a great help for our SEO efforts, all while requiring minimal oversight / guidance from us. Our organic traffic has improved due to their blogging and backlinking efforts, and their communication is stellar. I have …
+						QualityTeam has been a great help for our SEO efforts, all while requiring minimal oversight / guidance from us. Our organic traffic has improved due to their blogging and backlinking efforts, and their communication is stellar. I have …
 					</Description>
 					</div>
 					<motion.div initial={{scale:0}} whileInView={{scale:1,transition: {'delay': 0.5}}} viewport={{once:false,amount:0.8}} className='flex items-center gap-5 text-slate-50'>
@@ -50,10 +50,10 @@ function Testimonial ()
 					<div className='space-y-12'>
 				<div className='space-y-5'>
 					<Header>
-						Shortlist has been a great help for our SEO efforts
+						QualityTeam has been a great help for our SEO efforts
 					</Header>
 					<Description width='w-40'>
-						Shortlist has been a great help for our SEO efforts, all while requiring minimal oversight / guidance from us. Our organic traffic has improved due to their blogging and backlinking efforts, and their communication is stellar. I have …
+						QualityTeam has been a great help for our SEO efforts, all while requiring minimal oversight / guidance from us. Our organic traffic has improved due to their blogging and backlinking efforts, and their communication is stellar. I have …
 					</Description>
 					</div>
 					<motion.div initial={{scale:0}} whileInView={{scale:1,transition:{'delay':0.3}}} viewport={{once:false}} className='flex items-center gap-5 text-slate-50'>

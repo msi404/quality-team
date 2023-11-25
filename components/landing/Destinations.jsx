@@ -45,7 +45,7 @@ function Destinations ()
 							<VStack spacing='space-y-6'>
 							<ListItem>
 							<Fotonote color='text-purple-400'>02</Fotonote>
-							<Text color='text-slate-400'>No Shortlist branding – white<br/>label friendly!</Text>
+							<Text color='text-slate-400'>No QualityTeam branding – white<br/>label friendly!</Text>
 							</ListItem>
 							<ListItem>
 							<Fotonote color='text-purple-400'>04</Fotonote>

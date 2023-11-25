@@ -1,9 +1,16 @@
-import {Fragment} from 'react'
+import { Fragment } from 'react'
+import Clinets from '@/components/landing/Clients'
+import Destinations from '@/components/landing/Destinations'
+import Banner from '@/components/about-us/Banner'
+import Metrics from '@/components/about-us/Metrics'
 function Page ()
 {
 	return (
 		<Fragment>
-			<h1>Hello World</h1>
+			<Banner />
+			<Clinets />
+			<Destinations />
+			<Clinets />
 		</Fragment>
 	)
 }
