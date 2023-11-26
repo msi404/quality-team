@@ -5,20 +5,22 @@ import Description from '@/components/ui/Description'
 import Card from '@/components/ui/Card'
 import Header from '@/components/ui/Header'
 import VStack from '@/components/ui/VStack'
-import HStack from '@/components/ui/HStack'
 import Brands from '@/components/Widgets/Brands'
 import * as Avatar from '@radix-ui/react-avatar';
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
+import { useTranslation} from 'next-i18next'
+
 function Testimonial ()
-{	
+{
+	const {t:translate} = useTranslation('testimonial')
 	return (
 		<ContainerFluid>
 			<VStack spacing='space-y-10'>
 			<div className='space-y-5 lg:space-y-10 text-center'>
-				<Text animate color='text-green-400'>Our Amazing</Text>
-				<Header delay={0.3} animate size='lg:text-7xl' align='text-center' color='black'>Clients</Header>
+					<Text animate color='text-green-400'>{translate("fotonote")}</Text>
+					<Header delay={ 0.3 } animate size='lg:text-7xl' align='text-center' color='black'>{translate('title')}</Header>
 				<Description delay={0.4} animate width='full' align='text-center' color='gray'>
-					These wonderful companies have been with us from the<br /> beginning
+					{translate('description')}
 				</Description>
 				</div>
 				<motion.div initial={ { opacity: 0, translateY: '40px' } } whileInView={ { opacity: 1, translateY: '0px',transition:{'duration':0.3,'delay':0.3}} } viewport={ { once:true,amount:0.8}} className='grayscale'>
@@ -29,10 +31,10 @@ function Testimonial ()
 					<div className='space-y-12'>
 				<div className='space-y-5'>
 					<Header>
-						Working with QualityTeam was a great experience
+						{translate('firstTestimonialHeader')}
 					</Header>
 					<Description width='w-full'>
-						QualityTeam has been a great help for our SEO efforts, all while requiring minimal oversight / guidance from us. Our organic traffic has improved due to their blogging and backlinking efforts, and their communication is stellar. I have …
+						{translate('firstTestimonialComment')}
 					</Description>
 					</div>
 					<motion.div initial={{scale:0}} whileInView={{scale:1,transition: {'delay': 0.5}}} viewport={{once:true,amount:0.8}} className='flex items-center gap-5 text-slate-50'>
@@ -50,10 +52,10 @@ function Testimonial ()
 					<div className='space-y-12'>
 				<div className='space-y-5'>
 					<Header>
-						QualityTeam has been a great help for our SEO efforts
+						{translate('secondTestimonialHeader')}
 					</Header>
 					<Description width='w-full'>
-						QualityTeam has been a great help for our SEO efforts, all while requiring minimal oversight / guidance from us. Our organic traffic has improved due to their blogging and backlinking efforts, and their communication is stellar. I have …
+						{translate('secondTestimonialComment')}
 					</Description>
 					</div>
 					<motion.div initial={{scale:0}} whileInView={{scale:1,transition:{'delay':0.3}}} viewport={{once:true}} className='flex items-center gap-5 text-slate-50'>

@@ -7,9 +7,11 @@ import Container from '@/components/ui/Container'
 import ImagesCollection from '@/components/ui/ImagesCollection/ImagesCollection'
 import images from '@/components/pages/about-us-page/Images'
 import Image from 'next/image'
-import {motion,useTransform,useScroll} from 'framer-motion'
+import { motion, useTransform, useScroll } from 'framer-motion'
+import { useTranslation} from 'next-i18next'
 function Banner ()
 {
+	const {t:translate} = useTranslation('aboutUsBanner')
 	const [ isMinWidthMedium, setIsMinWidthMedium ] = useState( false );
 	const mediaQuery = useMediaQuery({ query: `(max-width: 1200px)` });
 	const scope = useRef();
@@ -27,9 +29,9 @@ function Banner ()
 			<VStack spacing='space-y-16'>
 			<VStack responsive spacing='space-y-10'>
 			<Headline color='text-slate-800'>
-				Beyond the Typical<br/>Marketing Agency:<br/>Meet QualityTeam
+				{translate('header')}
 			</Headline>
-			<Button variant='bg-purple-400' active='active:bg-purple-400' hover='hover:bg-purple-600'>Let's Talk!</Button>
+					<Button variant='bg-purple-400' active='active:bg-purple-400' hover='hover:bg-purple-600'>{translate('button')}</Button>
 			</VStack>
 				{ !isMinWidthMedium ? (
 				<ImagesCollection>

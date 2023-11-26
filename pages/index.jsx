@@ -4,6 +4,7 @@ import Features from '@/components/Widgets/Features'
 import Destinations from '@/components/Widgets/Destinations'
 import Clients from '@/components/Widgets/Clients'
 import Booking from '@/components/Widgets/Booking'
+import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
 export default function Home ()
 {
   return (
@@ -17,3 +18,13 @@ export default function Home ()
     </div>
   )
 }
+
+export async function getStaticProps ( { locale } )
+{
+  return {
+    props: {
+      ... (await serverSideTranslations(locale,['homeBanner','testimonial','features','destinations']))
+    }
+  }
+}
+

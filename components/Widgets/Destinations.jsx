@@ -12,20 +12,20 @@ import Button from '@/components/ui/Button'
 import DestenationImage from '@/public/destenation-image.png'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { useTranslation} from 'next-i18next'
+
 function Destinations ()
 {
+	const {t:translate} = useTranslation('destinations')
 	return (
 		<ContainerFluid>
 			<div className='flex justify-center'>
 				<HStack responsive spacing='space-y-10 lg:space-x-10'>
 					<VStack spacing='space-y-10'>
-					<Header animate color='text-purple-400'>Simple, Scalable Link Building</Header>
-						<Title color='text-slate-700' animate delay={ 0.2 }>For Agencies<br />Who Love Their<br />Clients</Title>
-						<Description animate delay={0.2} color='text-slate-400'>
-							Shortlist is an ideal link building provider for agencies who love their
-							<br />clients and want their backlink profile protected. Our process is
-							<br />simple and easy to follow and will allow you to focus on doing what
-							<br/>you do best while we handle the rest.
+						<Header animate color='text-purple-400'>{translate('header')}</Header>
+						<Title color='text-slate-700' animate delay={ 0.2 }>{translate('title')}</Title>
+						<Description width='w-120' animate delay={0.2} color='text-slate-400'>
+							{translate('description')}
 						</Description>
 						<motion.div className='space-y-10' initial={{opacity:0,translateY:'30px'}} whileInView={{opacity:1,translateY:'0px',transition:{'duration':0.4,'delay':0.2}}} viewport={{once:true,amount:0.90}}>
 						<HStack spaceBetween>
@@ -33,11 +33,11 @@ function Destinations ()
 							<VStack spacing='space-y-6'>
 							<ListItem>
 							<Fotonote color='text-purple-400'>01</Fotonote>
-							<Text color='text-slate-400'>Monthly updates and easy to<br/>follow reporting</Text>
+							<Text color='text-slate-400'>{translate('one')}</Text>
 							</ListItem>
 							<ListItem>
 							<Fotonote color='text-purple-400'>03</Fotonote>
-							<Text color='text-slate-400'>Fair pricing that allows for a<br/>considerable markup</Text>
+							<Text color='text-slate-400'>{translate('three')}</Text>
 							</ListItem>
 							</VStack>
 							</List>
@@ -45,16 +45,16 @@ function Destinations ()
 							<VStack spacing='space-y-6'>
 							<ListItem>
 							<Fotonote color='text-purple-400'>02</Fotonote>
-							<Text color='text-slate-400'>No QualityTeam branding – white<br/>label friendly!</Text>
+							<Text color='text-slate-400'>{translate('two')}</Text>
 							</ListItem>
 							<ListItem>
 							<Fotonote color='text-purple-400'>04</Fotonote>
-							<Text color='text-slate-400'>Dedicated SEO specialist</Text>
+							<Text color='text-slate-400'>{translate('four')}</Text>
 							</ListItem>
 							</VStack>
 							</List>
 							</HStack>
-							        <Button variant='bg-purple-400' active='active:bg-purple-400' hover='hover:bg-purple-600'>Learn More</Button>
+							<Button variant='bg-purple-400' active='active:bg-purple-400' hover='hover:bg-purple-600'>{translate('button')}</Button>
 						</motion.div>
 					</VStack>
 					<VStack>

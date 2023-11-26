@@ -9,9 +9,12 @@ import List from '@/components/ui/List'
 import ListItem from '@/components/ui/ListItem'
 import Image from 'next/image'
 import LandingImage from '@/public/landing-image-1.png'
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
+import { useTranslation} from 'next-i18next'
+
 function Features ()
 {
+	const {t:translate} = useTranslation('features')
 	return (
 		<ContainerFluid background='bg-slate-100'>
 			<div className='flex justify-center'>
@@ -20,23 +23,23 @@ function Features ()
 					<Image className='rounded-3xl' width={500} height={500} src={LandingImage} />
 			</VStack>
 			<VStack spacing='space-y-10'>
-					<Header animate color='text-green-400'>Company Overview</Header>
-						<Title color='text-slate-700' animate delay={0.2}>What Makes<br />Quality Team Different</Title>
+						<Header animate color='text-green-400'>{translate('header')}</Header>
+						<Title color='text-slate-700' animate delay={ 0.2 }>{translate('title')}</Title>
 						<motion.div initial={{opacity:0,translateY:'30px'}} whileInView={{opacity:1,translateY:'0px',transition:{'duration':0.4,'delay':0.2}}} viewport={{once:true,amount:0.90}}>
 						<HStack spaceBetween>
 							<List>
 							<VStack spacing='space-y-6'>
 							<ListItem>
 							<Fotonote color='text-green-400'>01</Fotonote>
-							<Text color='text-slate-500'>Contextual, dofollow links<br/>from high authority sites.</Text>
+											<Text color='text-slate-500'>{translate('one')}</Text>
 							</ListItem>
 							<ListItem>
 							<Fotonote color='text-green-400'>03</Fotonote>
-							<Text color='text-slate-500'>800+ word articles from<br/>quality writers.</Text>
+											<Text color='text-slate-500'>{translate('three')}</Text>
 							</ListItem>
 							<ListItem>
 							<Fotonote color='text-green-400'>05</Fotonote>
-							<Text color='text-slate-500'>Dozens of relevant niches to<br/>choose from</Text>
+											<Text color='text-slate-500'>{translate('five')}</Text>
 							</ListItem>
 							</VStack>
 							</List>
@@ -44,15 +47,15 @@ function Features ()
 							<VStack spacing='space-y-6'>
 							<ListItem>
 							<Fotonote color='text-green-400'>02</Fotonote>
-							<Text color='text-slate-500'>Choose the keywords you<br/>want to rank for.</Text>
+							<Text color='text-slate-500'>{translate('two')}</Text>
 							</ListItem>
 							<ListItem>
 							<Fotonote color='text-green-400'>04</Fotonote>
-							<Text color='text-slate-500'>Each site receives a minimum<br/>of 500 organic visits a month.</Text>
+							<Text color='text-slate-500'>{translate('four')}</Text>
 							</ListItem>
 							<ListItem>
 							<Fotonote color='text-green-400'>06</Fotonote>
-							<Text color='text-slate-500'>Guaranteed to last 12 months,<br/>or it’s on us.</Text>
+							<Text color='text-slate-500'>{translate('six')}</Text>
 							</ListItem>
 							</VStack>
 							</List>
