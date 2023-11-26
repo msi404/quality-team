@@ -8,9 +8,7 @@ function Page ()
 	return (
 		<Fragment>
 			<Banner />
-			<Clinets />
-			<Destinations />
-			<Clinets />
+			<Metrics />
 		</Fragment>
 	)
 }
