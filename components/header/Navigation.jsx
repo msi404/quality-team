@@ -21,9 +21,9 @@ function Navigation ()
 					</Link>
 				</NavigationMenu.Item>
 				<NavigationMenu.Item>
-					<NavigationMenu.Link>
+					<Link href='/services'>
 						Services
-					</NavigationMenu.Link>
+					</Link>
 				</NavigationMenu.Item>
 				<NavigationMenu.Item>
 					<NavigationMenu.Link>

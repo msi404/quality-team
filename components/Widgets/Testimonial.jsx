@@ -6,7 +6,7 @@ import Card from '@/components/ui/Card'
 import Header from '@/components/ui/Header'
 import VStack from '@/components/ui/VStack'
 import HStack from '@/components/ui/HStack'
-import Brands from '@/components/landing/Brands'
+import Brands from '@/components/Widgets/Brands'
 import * as Avatar from '@radix-ui/react-avatar';
 import {motion} from 'framer-motion'
 function Testimonial ()
@@ -31,7 +31,7 @@ function Testimonial ()
 					<Header>
 						Working with QualityTeam was a great experience
 					</Header>
-					<Description width='w-40'>
+					<Description width='w-full'>
 						QualityTeam has been a great help for our SEO efforts, all while requiring minimal oversight / guidance from us. Our organic traffic has improved due to their blogging and backlinking efforts, and their communication is stellar. I have …
 					</Description>
 					</div>
@@ -52,7 +52,7 @@ function Testimonial ()
 					<Header>
 						QualityTeam has been a great help for our SEO efforts
 					</Header>
-					<Description width='w-40'>
+					<Description width='w-full'>
 						QualityTeam has been a great help for our SEO efforts, all while requiring minimal oversight / guidance from us. Our organic traffic has improved due to their blogging and backlinking efforts, and their communication is stellar. I have …
 					</Description>
 					</div>
