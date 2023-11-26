@@ -1,7 +1,7 @@
-function HStack ({children,spacing,center,spaceBetween,width,responsive})
+function HStack ({children,spacing,center,spaceBetween,width,responsive,padding})
 {
 	return (
-		<div className={`flex ${responsive ? 'flex-col lg:flex-row' : null} ${center ? 'justify-center' : null} ${spaceBetween ? 'justify-between' : null} ${width} ${spacing}`}>{children}</div>
+		<div className={`flex ${padding} ${responsive ? 'flex-col lg:flex-row' : null} ${center ? 'justify-center' : null} ${spaceBetween ? 'justify-between' : null} ${width} ${spacing}`}>{children}</div>
 	)
 }
 
