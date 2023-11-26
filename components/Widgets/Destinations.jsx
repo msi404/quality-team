@@ -27,7 +27,7 @@ function Destinations ()
 							<br />simple and easy to follow and will allow you to focus on doing what
 							<br/>you do best while we handle the rest.
 						</Description>
-						<motion.div className='space-y-10' initial={{opacity:0,translateY:'30px'}} whileInView={{opacity:1,translateY:'0px',transition:{'duration':0.4,'delay':0.2}}} viewport={{once:false,amount:0.90}}>
+						<motion.div className='space-y-10' initial={{opacity:0,translateY:'30px'}} whileInView={{opacity:1,translateY:'0px',transition:{'duration':0.4,'delay':0.2}}} viewport={{once:true,amount:0.90}}>
 						<HStack spaceBetween>
 							<List>
 							<VStack spacing='space-y-6'>

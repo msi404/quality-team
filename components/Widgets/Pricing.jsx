@@ -21,8 +21,8 @@ function Pricing ()
 				<Title color='text-slate-600'>Clean Business done For you</Title>
 				<Description color='text-slate-400'>Choose the package that suits your needs based on Domain Authority or Traffic.</Description>
 				</VStack>
-				<HStack spacing='space-x-5'>
-					<Card>
+				<HStack responsive>
+					<Card margin='m-1'>
 						<VStack center spacing='space-y-10'>
 						<VStack>
 							<Header>Starter</Header>
@@ -71,7 +71,7 @@ function Pricing ()
 							<Button variant='bg-green-400' active='active:bg-green-400' hover='hover:bg-green-500'>Get Started</Button>
 						</VStack>
 					</Card>
-					<Card>
+					<Card margin='m-1'>
 						<VStack center spacing='space-y-10'>
 						<VStack>
 							<Header>Growth</Header>
@@ -120,7 +120,7 @@ function Pricing ()
 							<Button variant='bg-green-400' active='active:bg-green-400' hover='hover:bg-green-500'>Get Started</Button>
 						</VStack>
 					</Card>
-					<Card>
+					<Card margin='m-1'>
 						<VStack center spacing='space-y-10'>
 						<VStack>
 							<Header>Accelerator</Header>
