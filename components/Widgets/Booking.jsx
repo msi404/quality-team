@@ -3,10 +3,10 @@ import Headline from '@/components/ui/Headline'
 import Description from '@/components/ui/Description'
 import VStack from '@/components/ui/VStack'
 import Button from '@/components/ui/Button'
-function Booking ()
+function Booking ({background})
 {
 	return (
-		<ContainerFuild>
+		<ContainerFuild background={background}>
 			<VStack spacing='space-y-10' center>
 				<Headline animate delay={0.3} color='text-slate-800' align='text-center'>Let’s get you<br />QualityTeam to the top!</Headline>
 				<Description animate delay={0.3} color='text-slate-400' align='text-center'>

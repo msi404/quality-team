@@ -1,14 +1,14 @@
 import { Fragment } from 'react'
-import Clinets from '@/components/landing/Clients'
-import Destinations from '@/components/landing/Destinations'
-import Banner from '@/components/about-us/Banner'
-import Metrics from '@/components/about-us/Metrics'
+import Booking from '@/components/Widgets/Booking'
+import Banner from '@/components/pages/about-us-page/Banner'
+import Metrics from '@/components/Widgets/Metrics'
 function Page ()
 {
 	return (
 		<Fragment>
 			<Banner />
 			<Metrics />
+			<Booking background='bg-slate-100'/>
 		</Fragment>
 	)
 }

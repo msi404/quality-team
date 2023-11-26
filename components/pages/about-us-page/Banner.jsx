@@ -5,7 +5,7 @@ import Button from '@/components/ui/Button'
 import VStack from '@/components/ui/VStack'
 import Container from '@/components/ui/Container'
 import ImagesCollection from '@/components/ui/ImagesCollection/ImagesCollection'
-import images from '@/components/about-us/Images'
+import images from '@/components/pages/about-us-page/Images'
 import Image from 'next/image'
 import {motion,useTransform,useScroll} from 'framer-motion'
 function Banner ()

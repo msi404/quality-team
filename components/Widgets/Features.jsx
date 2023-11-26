@@ -22,7 +22,7 @@ function Features ()
 			<VStack spacing='space-y-10'>
 					<Header animate color='text-green-400'>Company Overview</Header>
 						<Title color='text-slate-700' animate delay={0.2}>What Makes<br />Quality Team Different</Title>
-						<motion.div initial={{opacity:0,translateY:'30px'}} whileInView={{opacity:1,translateY:'0px',transition:{'duration':0.4,'delay':0.2}}} viewport={{once:false,amount:0.90}}>
+						<motion.div initial={{opacity:0,translateY:'30px'}} whileInView={{opacity:1,translateY:'0px',transition:{'duration':0.4,'delay':0.2}}} viewport={{once:true,amount:0.90}}>
 						<HStack spaceBetween>
 							<List>
 							<VStack spacing='space-y-6'>

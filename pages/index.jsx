@@ -1,9 +1,9 @@
-import Banner from '@/components/landing/Banner'
-import Testimonial from '@/components/landing/Testimonial'
-import Features from '@/components/landing/Features'
-import Destinations from '@/components/landing/Destinations'
-import Clients from '@/components/landing/Clients'
-import Booking from '@/components/landing/Booking'
+import Banner from '@/components/pages/landing-page/Banner'
+import Testimonial from '@/components/Widgets/Testimonial'
+import Features from '@/components/Widgets/Features'
+import Destinations from '@/components/Widgets/Destinations'
+import Clients from '@/components/Widgets/Clients'
+import Booking from '@/components/Widgets/Booking'
 export default function Home ()
 {
   return (
