@@ -3,8 +3,9 @@ import Button from '@/components/ui/Button'
 import Image from 'next/image'
 import Logo from '@/public/Logo.png'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 import Switch from '@/components/ui/Switch/Switch'
+import ContactModal from '@/components/Widgets/ContactModal'
+import { useRouter } from 'next/router'
 function Navigation ()
 {
 	const {locale} = useRouter()
@@ -34,15 +35,13 @@ function Navigation ()
 					</Link>
 				</NavigationMenu.Item>
 				<NavigationMenu.Item>
-					<NavigationMenu.Link>
-						Contact
-					</NavigationMenu.Link>
+					<ContactModal/>
 				</NavigationMenu.Item>
 				<NavigationMenu.Item>
 					<NavigationMenu.Link>
-        <Button variant='bg-green-400' active='active:bg-green-400' hover='hover:bg-green-600'>
-          Subsecribe Now
-        </Button>
+        			<Button variant='bg-green-400' active='active:bg-green-400' hover='hover:bg-green-600'>
+          				Subsecribe Now
+        			</Button>
 					</NavigationMenu.Link>
 				</NavigationMenu.Item>
 				<NavigationMenu.Item>

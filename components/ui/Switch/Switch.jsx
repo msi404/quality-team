@@ -18,7 +18,7 @@ function Switch ()
 	return (
 		<div className='flex justify-center items-center space-x-5'>
 			<label className='cursor-pointer' htmlFor="switch">{nodeRef?.current?.checked ? "عربي" : "English"}</label>
-			<input onClick={onLanquageClickedHandler} ref={nodeRef} id="switch" class={clasess.switch} type="checkbox"></input>
+			<input onClick={onLanquageClickedHandler} ref={nodeRef} id="switch" className={clasess.switch} type="checkbox"></input>
 		</div>
 	)
 }
