@@ -1,4 +1,4 @@
-import { useRef, useState,useEffect} from 'react'
+import {useState,useEffect} from 'react'
 import { useRouter } from 'next/router';
 import clasess from './Switch.module.css';
 function Switch ()
@@ -9,18 +9,20 @@ function Switch ()
 	{
 		if ( isChecked )
 		{
+			setIsChecked(false)
 			push( `/${ pathname }`, undefined, { locale: 'en' } )
 			setTimeout( () =>
 			{
 				reload()
-			},50)
+			},60)
 		} else
 		{
+			setIsChecked(true)
 			push( `/${ pathname }`, undefined, { locale: 'ar' } )
 			setTimeout( () =>
 			{
 				reload()
-			},50)
+			},60)
 		}
 	}
 
