@@ -1,25 +1,38 @@
-import { useRef} from 'react'
+import { useRef, useState,useEffect} from 'react'
 import { useRouter } from 'next/router';
 import clasess from './Switch.module.css';
 function Switch ()
 {
-	const nodeRef = useRef();
-	const { push, pathname} = useRouter();
+	const [isChecked,setIsChecked] = useState(false)
+	const { push, pathname,reload,locale} = useRouter();
 	const onLanquageClickedHandler = () =>
 	{
-		if ( nodeRef.current.checked )
-		{
-			push( `/${ pathname }`, undefined, { locale: 'ar' } )
-		} else
+		if ( isChecked )
 		{
 			push( `/${ pathname }`, undefined, { locale: 'en' } )
+			setTimeout( () =>
+			{
+				reload()
+			},50)
+		} else
+		{
+			push( `/${ pathname }`, undefined, { locale: 'ar' } )
+			setTimeout( () =>
+			{
+				reload()
+			},50)
 		}
 	}
 
+	useEffect( () =>
+	{
+		locale === 'ar' ? setIsChecked(true) : setIsChecked(false)
+	},[locale])
+
 	return (
 		<div className='flex justify-center items-center space-x-5'>
-			<label className='cursor-pointer' htmlFor="switch">{nodeRef?.current?.checked ? "عربي" : "English"}</label>
-			<input onClick={onLanquageClickedHandler} ref={nodeRef} id="switch" className={clasess.switch} type="checkbox"></input>
+			<label className='cursor-pointer' htmlFor="switch">{isChecked ? "عربي" : "English"}</label>
+			<input checked={isChecked} onClick={onLanquageClickedHandler}  id="switch" className={clasess.switch} type="checkbox"></input>
 		</div>
 	)
 }

@@ -35,9 +35,11 @@ function Banner ()
 			</VStack>
 				{ !isMinWidthMedium ? (
 				<ImagesCollection>
-				<motion.div style={{x}} className='flex space-x-5'>
-						{ images.map( ( image,index) => (
-						<Image key={index} className='rounded-3xl' width={250} height={250} src={image}/>
+				<motion.div style={{x}} className='flex '>
+							{ images.map( ( image, index ) => (
+							<div key={index} className='ps-2'>
+									<Image className='rounded-3xl' width={400} height={400} src={image}/>
+							</div>
 					))}
 				</motion.div>
 			</ImagesCollection>	

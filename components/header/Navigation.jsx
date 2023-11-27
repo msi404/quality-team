@@ -8,7 +8,7 @@ import ContactModal from '@/components/Widgets/ContactModal'
 import { useRouter } from 'next/router'
 function Navigation ()
 {
-	const {locale} = useRouter()
+	const { locale } = useRouter()
 	return (
 		<NavigationMenu.Root className='sticky top-0 h-16 bg-gradient-to-r z-10 from-indigo-900 to-indigo-600 flex items-center justify-between p-5 md:px-24 text-slate-50'>
 			<NavigationMenu.List>
