@@ -26,9 +26,9 @@ function Banner ()
   }, [mediaQuery, isMinWidthMedium]);
 	return (
 		<Container background='bg-slate-100'>
-			<VStack spacing='space-y-16'>
+			<VStack spacing='space-y-20'>
 			<VStack responsive spacing='space-y-10'>
-			<Headline color='text-slate-800'>
+			<Headline width='max-w-2xl' color='text-slate-800'>
 				{translate('header')}
 			</Headline>
 					<Button variant='bg-purple-400' active='active:bg-purple-400' hover='hover:bg-purple-600'>{translate('button')}</Button>

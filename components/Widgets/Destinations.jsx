@@ -20,11 +20,11 @@ function Destinations ()
 	return (
 		<ContainerFluid>
 			<div className='flex justify-center'>
-				<HStack responsive spacing='space-y-10 lg:space-x-10'>
-					<VStack spacing='space-y-10'>
+				<HStack responsive spacing='space-y-10'>
+					<VStack spacing='space-y-10 lg:pe-16'>
 						<Header animate color='text-purple-400'>{translate('header')}</Header>
-						<Title color='text-slate-700' animate delay={ 0.2 }>{translate('title')}</Title>
-						<Description width='w-120' animate delay={0.2} color='text-slate-400'>
+						<Title width='max-w-md' color='text-slate-700' animate delay={ 0.2 }>{translate('title')}</Title>
+						<Description width='max-w-md' animate delay={0.2} color='text-slate-400'>
 							{translate('description')}
 						</Description>
 						<motion.div className='space-y-10' initial={{opacity:0,translateY:'30px'}} whileInView={{opacity:1,translateY:'0px',transition:{'duration':0.4,'delay':0.2}}} viewport={{once:true,amount:0.90}}>
@@ -33,11 +33,11 @@ function Destinations ()
 							<VStack spacing='space-y-6'>
 							<ListItem>
 							<Fotonote color='text-purple-400'>01</Fotonote>
-							<Text color='text-slate-400'>{translate('one')}</Text>
+							<Text width='max-w-xs' color='text-slate-400'>{translate('one')}</Text>
 							</ListItem>
 							<ListItem>
 							<Fotonote color='text-purple-400'>03</Fotonote>
-							<Text color='text-slate-400'>{translate('three')}</Text>
+							<Text width='max-w-xs' color='text-slate-400'>{translate('three')}</Text>
 							</ListItem>
 							</VStack>
 							</List>
@@ -45,11 +45,11 @@ function Destinations ()
 							<VStack spacing='space-y-6'>
 							<ListItem>
 							<Fotonote color='text-purple-400'>02</Fotonote>
-							<Text color='text-slate-400'>{translate('two')}</Text>
+							<Text width='max-w-xs' color='text-slate-400'>{translate('two')}</Text>
 							</ListItem>
 							<ListItem>
 							<Fotonote color='text-purple-400'>04</Fotonote>
-							<Text color='text-slate-400'>{translate('four')}</Text>
+							<Text width='max-w-xs' color='text-slate-400'>{translate('four')}</Text>
 							</ListItem>
 							</VStack>
 							</List>

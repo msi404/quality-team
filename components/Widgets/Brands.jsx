@@ -6,7 +6,7 @@ import Image from 'next/image'
 function Brands ()
 {
 	return (
-		<HStack center spacing='space-x-10'>
+		<HStack width='max-w-md mx-auto' center spaceBetween>
 			<Image width={80} height={80} src={AppleLogo}/>
 			<Image width={80} height={80} src={IraqiAirwaysLogo}/>
 			<Image width={80} height={80} src={MercedsBenzLogo}/>

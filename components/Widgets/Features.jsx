@@ -18,11 +18,11 @@ function Features ()
 	return (
 		<ContainerFluid background='bg-slate-100'>
 			<div className='flex justify-center'>
-			<HStack responsive spacing='space-y-10 lg:space-x-10'>
+			<HStack responsive spacing='space-y-10'>
 			<VStack>
 					<Image className='rounded-3xl' width={500} height={500} src={LandingImage} />
 			</VStack>
-			<VStack spacing='space-y-10'>
+			<VStack spacing='space-y-10 lg:ps-16'>
 						<Header animate color='text-green-400'>{translate('header')}</Header>
 						<Title color='text-slate-700' animate delay={ 0.2 }>{translate('title')}</Title>
 						<motion.div initial={{opacity:0,translateY:'30px'}} whileInView={{opacity:1,translateY:'0px',transition:{'duration':0.4,'delay':0.2}}} viewport={{once:true,amount:0.90}}>

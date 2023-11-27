@@ -13,7 +13,7 @@ function Banner ()
       <div className='flex flex-col items-center md:items-start p-5'>
       <div className='mt-12'>
         <VStack spacing='space-y-10'>
-            <Headline>{translate('header')}</Headline>
+            <Headline width='max-w-xl'>{translate('header')}</Headline>
         <Description width='md:w-120'>
           {translate('description')}
         </Description>

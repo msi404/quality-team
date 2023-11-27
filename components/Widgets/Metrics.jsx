@@ -22,9 +22,9 @@ function Metrics ()
 					<br />marketers, developers, and
 					<br/>designers.
 				</Title>
-				<HStack responsive spacing='space-x-5'>
+				<HStack responsive>
 					<Image className='hidden lg:block' width={ 500 } height={ 500 } src={ UndrawOnlineArt } />
-					<VStack spacing='space-y-10'>
+					<VStack spacing='space-y-10 ps-5'>
 					<Description color='text-slate-500'>
 					However, we don’t associate ourselves with your typical marketing agency. We don’t force large,
 					annual contracts. We adhere to extremely high quality standards that often results in us turning away
@@ -40,7 +40,7 @@ function Metrics ()
 				</HStack>
 		</VStack>
 		<HStack spacing='space-x-10 space-y-10' responsive>
-		<VStack responsive>
+		<VStack width='pe-16' responsive>
 		<Fotonote color='text-green-400'>
 			QualityTeam
 		</Fotonote>			

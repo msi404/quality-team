@@ -1,4 +1,4 @@
-import {Fragment} from 'react'
+import { Fragment } from 'react'
 import Navigation from '@/components/header/Navigation'
 import Footer from '@/components/footer/Footer'
 
@@ -8,7 +8,7 @@ function Layout ( { children } )
 		<Fragment>
 		<Navigation />
 		<main>
-			{children}
+		{children}
 			</main>
 		<Footer />
 		</Fragment>
