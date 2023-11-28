@@ -32,8 +32,8 @@ function Switch ()
 	},[locale])
 
 	return (
-		<div className='flex justify-center items-center space-x-5'>
-			<label className='cursor-pointer' htmlFor="switch">{isChecked ? "عربي" : "English"}</label>
+		<div className='flex'>
+			<label className='cursor-pointer pe-5' htmlFor="switch">{isChecked ? "عربي" : "English"}</label>
 			<input checked={isChecked} onClick={onLanquageClickedHandler}  id="switch" className={clasess.switch} type="checkbox"></input>
 		</div>
 	)
