@@ -13,24 +13,24 @@ function Navigation ()
 		<NavigationMenu.Root className='sticky top-0 h-16 bg-gradient-to-r z-10 from-indigo-900 to-indigo-600 flex items-center justify-between p-5 md:px-24 text-slate-50'>
 			<NavigationMenu.List>
 				<NavigationMenu.Item>
-						<Link href='/' locale={locale}>
+						<Link className='p-5' href='/' locale={locale}>
 							<Image className='h-12 w-12' src={Logo} alt="" />
 						</Link>
 				</NavigationMenu.Item>
 			</NavigationMenu.List>
 			<NavigationMenu.List className='hidden lg:flex justify-bwteen items-center gap-5'>
 				<NavigationMenu.Item>
-					<Link href='/about-us'>
+					<Link className='p-5' href='/about-us'>
 						About us
 					</Link>
 				</NavigationMenu.Item>
 				<NavigationMenu.Item>
-					<Link href='/services'>
+					<Link className='p-5' href='/services'>
 						Services
 					</Link>
 				</NavigationMenu.Item>
 				<NavigationMenu.Item>
-					<Link href='/our-work'>
+					<Link className='p-5' href='/our-work'>
 						Our work
 					</Link>
 				</NavigationMenu.Item>

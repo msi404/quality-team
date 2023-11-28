@@ -20,7 +20,7 @@ function Counter ( { from, to,duration=10,color} )
 	}, [ from, to] )
 	
 	return (
-		<h1 className={`font-bold text-3xl md:text-5xl ${color}`} ref={nodeRef}/>
+		<h1 className={`font-bold text-3xl md:text-5xl pe-5 ps-5 ${color}`} ref={nodeRef}/>
 	)
 }
 

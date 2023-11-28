@@ -38,7 +38,7 @@ function Banner ()
 				<motion.div style={{x}} className='flex '>
 							{ images.map( ( image, index ) => (
 							<div key={index} className='ps-2'>
-									<Image className='rounded-3xl' width={400} height={400} src={image}/>
+									<Image className='rounded-3xl' width={600} height={600} src={image}/>
 							</div>
 					))}
 				</motion.div>

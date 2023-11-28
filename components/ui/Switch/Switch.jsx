@@ -14,7 +14,7 @@ function Switch ()
 			setTimeout( () =>
 			{
 				reload()
-			},60)
+			},65)
 		} else
 		{
 			setIsChecked(true)
@@ -22,7 +22,7 @@ function Switch ()
 			setTimeout( () =>
 			{
 				reload()
-			},60)
+			},65)
 		}
 	}
 

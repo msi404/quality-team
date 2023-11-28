@@ -18,9 +18,11 @@ function ContactModal ()
 	}
 	return (
 		<Dialog.Root open={isOpen}>
-			<Dialog.Trigger asChild>
-				<button onClick={onContactClickedHandler}>Contact</button>
-			</Dialog.Trigger>
+			<div>
+				<Dialog.Trigger asChild>
+				<button className='py-5' onClick={onContactClickedHandler}>Contact Us</button>
+				</Dialog.Trigger>
+			</div>
 			<Dialog.Portal>
 				<Dialog.Overlay onClick={onContactClickedHandler} className='bg-slate-900/80 fixed inset-0' />
 				<motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}>
