@@ -13,4 +13,4 @@ const nextConfig = {
   i18n,
 }
 
-module.exports = withNextVideo( nextConfig );
+module.exports = nextConfig;
