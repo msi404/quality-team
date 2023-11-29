@@ -8,6 +8,14 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'us-wn-g.gr-cdn.com',
       },
+      {
+        protocol: 'https',
+        hostname: "res.cloudinary.com"
+      },
+      {
+        protocol: "https",
+        hostname: "external-content.duckduckgo.com"
+      }
     ],
   },
   reactStrictMode: true,

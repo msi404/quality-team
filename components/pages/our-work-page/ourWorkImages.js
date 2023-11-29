@@ -1,18 +1,16 @@
-import OurWorkFirst from '@/public/our_work_first.jpg';
-import OurWorkSecond from '@/public/our_work_second.jpg';
-import OurWorkThird from '@/public/our_work_third.jpg';
-import OurWorkFourth from '@/public/our_work_fourth.jpg';
-import OurWorkFifth from '@/public/our_work_fifth.jpg';
-import OurWorkSixth from '@/public/our_work_sixth.jpg';
-import OurWorkSeventh from '@/public/our_work_seventh.jpg';
-import OurWorkEighth from '@/public/our_work_eighth.jpg';
-import OurWorkNinth from '@/public/our_work_ninth.jpg';
-import OurWorkTenth from '@/public/our_work_tenth.jpg';
-import ImageOne from '@/public/image-one.png';
-import ImageTwo from '@/public/image-two.png';
-import ImageThree from '@/public/image-three.png';
-import ImageFour from '@/public/image-four.png';
-import ImageFive from '@/public/image-five.png';
-import ImageSix from '@/public/image-six.png';
-
-export default [ OurWorkFirst, OurWorkSecond, OurWorkThird, OurWorkFourth, OurWorkFifth, OurWorkSixth, OurWorkSeventh, OurWorkEighth, OurWorkNinth, OurWorkTenth, ImageOne, ImageTwo, ImageThree, ImageFour, ImageFive, ImageSix ];
+export default [
+	'https://res.cloudinary.com/dckoelcja/image/upload/v1701282851/image-three_qmp3bl.png',
+	'https://res.cloudinary.com/dckoelcja/image/upload/v1701282859/image-two_nizglq.png',
+	'https://res.cloudinary.com/dckoelcja/image/upload/v1701282858/our_work_tenth_evjm8o.jpg',
+	'https://res.cloudinary.com/dckoelcja/image/upload/v1701282857/our_work_sixth_ip3naq.jpg',
+	'https://res.cloudinary.com/dckoelcja/image/upload/v1701282856/our_work_fifth_kdisem.jpg',
+	'https://res.cloudinary.com/dckoelcja/image/upload/v1701282857/our_work_second_t2mdje.jpg',
+	'https://res.cloudinary.com/dckoelcja/image/upload/v1701282857/our_work_fourth_mriemc.jpg',
+	'https://res.cloudinary.com/dckoelcja/image/upload/v1701282857/our_work_ninth_hasxay.jpg',
+	'https://res.cloudinary.com/dckoelcja/image/upload/v1701282856/our_work_first_paglrj.jpg',
+	'https://res.cloudinary.com/dckoelcja/image/upload/v1701282856/our_work_eighth_wz5dfa.jpg',
+	'https://res.cloudinary.com/dckoelcja/image/upload/v1701282851/image-three_qmp3bl.png',
+	'https://res.cloudinary.com/dckoelcja/image/upload/v1701282843/image-one_lh5y2k.png',
+	'https://res.cloudinary.com/dckoelcja/image/upload/v1701282855/image-six_nsveub.png',
+	'https://res.cloudinary.com/dckoelcja/image/upload/v1701282855/image-four_vohgrm.png',
+];

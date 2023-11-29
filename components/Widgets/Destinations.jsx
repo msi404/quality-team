@@ -9,7 +9,6 @@ import Header from '@/components/ui/Header'
 import Title from '@/components/ui/Title'
 import Description from '@/components/ui/Description'
 import Button from '@/components/ui/Button'
-import DestenationImage from '@/public/destenation-image.png'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import {useRouter} from 'next/router'
@@ -22,7 +21,8 @@ function Destinations ()
 		const onLinkClicked = () =>
 	{
 		push('https://web.facebook.com/profile.php?id=61551994790268')
-	}
+		}
+	const destenationimage = 'https://res.cloudinary.com/dckoelcja/image/upload/v1701282855/destenation-image_pbuafs.png'
 	const {t:translate} = useTranslation('destinations')
 	return (
 		<ContainerFluid>
@@ -65,7 +65,7 @@ function Destinations ()
 						</motion.div>
 					</VStack>
 					<VStack>
-						<Image className='rounded-3xl' width={500} height={500} src={DestenationImage} />
+						<Image className='rounded-3xl' width={500} height={500} src={destenationimage} />
 					</VStack>
 				</HStack>
 			</div>
