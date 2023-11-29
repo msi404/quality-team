@@ -2,6 +2,9 @@
 	"name": "quality-team",
 	"version": "0.1.0",
 	"private": true,
+	"cacheDirectories": [
+		".next/cache"
+	],
 	"scripts": {
 		"dev": "next dev -p 8080",
 		"build": "next build",
