@@ -52,9 +52,7 @@ function Navigation ()
                     </Button>
 						</li>
 						<li>
-							<Link href='#' className='lg:p-4 py-3 px-0 block'>
 								<Switch />
-							</Link>
 						</li>
 					</ul>
 					</nav>

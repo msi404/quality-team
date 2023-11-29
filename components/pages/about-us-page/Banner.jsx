@@ -5,7 +5,7 @@ import Button from '@/components/ui/Button'
 import VStack from '@/components/ui/VStack'
 import Container from '@/components/ui/Container'
 import ImagesCollection from '@/components/ui/ImagesCollection/ImagesCollection'
-import images from '@/components/pages/about-us-page/Images'
+import images from '@/components/pages/about-us-page/images'
 import Image from 'next/image'
 import {useRouter} from 'next/router'
 import { motion, useTransform, useScroll } from 'framer-motion'
@@ -39,7 +39,7 @@ function Banner ()
 			</Headline>
 					<Button onClick={onLinkClicked} variant='bg-purple-400' active='active:bg-purple-400' hover='hover:bg-purple-600'>{translate('button')}</Button>
 			</VStack>
-				{ !isMinWidthMedium ? (
+				{/* { !isMinWidthMedium ? (
 				<ImagesCollection>
 				<motion.div style={{x}} className='flex '>
 							{ images.map( ( image, index ) => (
@@ -55,7 +55,7 @@ function Banner ()
 						<Image className='rounded-3xl' width={250} height={250} src={image}/>
 					))}
 						</div>
-				</ImagesCollection>)}
+				</ImagesCollection>)} */}
 			</VStack>
 		</Container>
 	)

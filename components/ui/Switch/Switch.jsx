@@ -14,7 +14,7 @@ function Switch ()
 			setTimeout( () =>
 			{
 				reload()
-			},65)
+			},100)
 		} else
 		{
 			setIsChecked(true)
@@ -22,7 +22,7 @@ function Switch ()
 			setTimeout( () =>
 			{
 				reload()
-			},65)
+			},100)
 		}
 	}
 
@@ -32,7 +32,7 @@ function Switch ()
 	},[locale])
 
 	return (
-		<div className='flex'>
+		<div className='flex lg:p-4 py-3 px-0 block'>
 			<label className='cursor-pointer pe-5' htmlFor="switch">{isChecked ? "عربي" : "English"}</label>
 			<input onChange={onLanquageClickedHandler} checked={isChecked} onClick={onLanquageClickedHandler}  id="switch" className={clasess.switch} type="checkbox"></input>
 		</div>
