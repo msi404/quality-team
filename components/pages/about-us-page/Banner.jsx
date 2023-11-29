@@ -39,7 +39,7 @@ function Banner ()
 			</Headline>
 					<Button onClick={onLinkClicked} variant='bg-purple-400' active='active:bg-purple-400' hover='hover:bg-purple-600'>{translate('button')}</Button>
 			</VStack>
-				{/* { !isMinWidthMedium ? (
+				{ !isMinWidthMedium ? (
 				<ImagesCollection>
 				<motion.div style={{x}} className='flex '>
 							{ images.map( ( image, index ) => (
@@ -55,7 +55,7 @@ function Banner ()
 						<Image className='rounded-3xl' width={250} height={250} src={image}/>
 					))}
 						</div>
-				</ImagesCollection>)} */}
+				</ImagesCollection>)}
 			</VStack>
 		</Container>
 	)

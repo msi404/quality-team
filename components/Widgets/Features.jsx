@@ -8,19 +8,19 @@ import Fotonote from '@/components/ui/Fotonote'
 import List from '@/components/ui/List'
 import ListItem from '@/components/ui/ListItem'
 import Image from 'next/image'
+import features from '@/public/features.png'
 import { motion } from 'framer-motion'
 import { useTranslation} from 'next-i18next'
 
 function Features ()
 {
-	const landingpage = 'https://res.cloudinary.com/dckoelcja/image/upload/v1701282853/landing-image-1_e9lxgs.png'
 	const {t:translate} = useTranslation('features')
 	return (
 		<ContainerFluid background='bg-slate-100'>
 			<div className='flex justify-center'>
 			<HStack responsive spacing='space-y-10'>
 			<VStack>
-					<Image className='rounded-3xl' width={500} height={500} src={landingpage} />
+					<Image className='rounded-3xl' width={500} height={500} src={features} />
 			</VStack>
 			<VStack spacing='space-y-10 lg:ps-16'>
 						<Header animate color='text-green-400'>{translate('header')}</Header>

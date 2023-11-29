@@ -11,6 +11,7 @@ import Description from '@/components/ui/Description'
 import Button from '@/components/ui/Button'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import destinations from '@/public/destinations.png'
 import {useRouter} from 'next/router'
 import { useTranslation} from 'next-i18next'
 
@@ -21,14 +22,13 @@ function Clients ()
 	{
 		push('https://web.facebook.com/profile.php?id=61551994790268')
 	}
-	const ourbrands = 'https://res.cloudinary.com/dckoelcja/image/upload/v1701282861/our-brands_bah5xf.png'
 	const {t:translate} = useTranslation('clients')
 	return (
 		<ContainerFluid background='bg-slate-100'>
 			<div className='flex justify-center'>
 				<HStack responsive spacing='space-y-10'>
 					<VStack>
-						<Image className='rounded-3xl' width={500} height={500} src={ourbrands} />
+						<Image className='rounded-3xl' width={500} height={500} src={destinations} />
 					</VStack>
 					<VStack spacing='space-y-10' width='lg:ps-16'>
 						<Header animate color='text-green-400'>{translate('header')}</Header>
