@@ -7,10 +7,16 @@ import Container from '@/components/ui/Container'
 import ImagesCollection from '@/components/ui/ImagesCollection/ImagesCollection'
 import images from '@/components/pages/about-us-page/Images'
 import Image from 'next/image'
+import {useRouter} from 'next/router'
 import { motion, useTransform, useScroll } from 'framer-motion'
 import { useTranslation} from 'next-i18next'
 function Banner ()
 {
+	const {push} = useRouter()
+	const onLinkClicked = () =>
+	{
+		push('https://web.facebook.com/profile.php?id=61551994790268')
+	}
 	const {t:translate} = useTranslation('aboutUsBanner')
 	const [ isMinWidthMedium, setIsMinWidthMedium ] = useState( false );
 	const mediaQuery = useMediaQuery({ query: `(max-width: 1200px)` });
@@ -25,13 +31,13 @@ function Banner ()
     }
   }, [mediaQuery, isMinWidthMedium]);
 	return (
-		<Container background='bg-gradient-to-l from-pink-500 from-10% via-red-500 via-30% to-purple-500'>
+		<Container background='bg-slate-100'>
 			<VStack spacing='space-y-20'>
 			<VStack responsive spacing='space-y-10'>
-			<Headline width='max-w-2xl' color='text-slate-100'>
+			<Headline width='max-w-2xl' color='text-slate-700'>
 				{translate('header')}
 			</Headline>
-					<Button variant='bg-purple-400' active='active:bg-purple-400' hover='hover:bg-purple-600'>{translate('button')}</Button>
+					<Button onClick={onLinkClicked} variant='bg-purple-400' active='active:bg-purple-400' hover='hover:bg-purple-600'>{translate('button')}</Button>
 			</VStack>
 				{ !isMinWidthMedium ? (
 				<ImagesCollection>

@@ -9,11 +9,17 @@ import Title from '@/components/ui/Title'
 import Description from '@/components/ui/Description'
 import Counter from '@/components/ui/Counter'
 import UndrawOnlineArt from '@/public/undraw_online_art.svg'
-import { useTranslation} from 'next-i18next'
+import { useTranslation } from 'next-i18next'
+import {useRouter} from 'next/router'
 import Image from 'next/image'
 function Metrics ()
 {
-		const {t:translate} = useTranslation('metrics')
+	const { t: translate } = useTranslation( 'metrics' )
+		const {push} = useRouter()
+	const onLinkClicked = () =>
+	{
+		push('https://web.facebook.com/profile.php?id=61551994790268')
+	}
 	return (
 		<ContainerFuild>
 			<VStack spacing='space-y-24'>
@@ -33,7 +39,7 @@ function Metrics ()
 		<Headline color='text-slate-700'>{translate('headline')}</Headline>		
 		<Description color='text-slate-600'>{translate('description')}</Description>				
 		</VStack>	
-		<Button variant='bg-green-400' active='active:bg-green-400' hover='hover:bg-green-600'>{translate('button')}</Button>			
+		<Button onClick={onLinkClicked} variant='bg-green-400' active='active:bg-green-400' hover='hover:bg-green-600'>{translate('button')}</Button>			
 		</HStack>	
 		<HStack center padding='px-52'>
 			<VStack width='w-52' center>

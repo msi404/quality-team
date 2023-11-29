@@ -11,13 +11,13 @@ function Banner ()
 {
 	  const {t:translate} = useTranslation('servicesBanner')
 	return (
-		<Container background="bg-gradient-to-l from-pink-500 from-10% via-red-500 via-30% to-orange-500">
+		<Container>
 			<HStack center responsive spacing='space-y-8'>
 				<VStack spacing='space-y-8'>
-				<Headline width='max-w-xl' color='text-slate-100'>{translate('headline')}</Headline>
-				<Description color='text-slate-200'>{translate('description')}</Description>
+				<Headline width='max-w-xl' color='text-slate-600'>{translate('headline')}</Headline>
+				<Description color='text-slate-500'>{translate('description')}</Description>
 				<HStack responsive>
-					<a href="tel:07827131748">
+					<a href="tel:0774666251">
 						<Button width='w-72' variant='bg-purple-400' active='active:bg-purple-400' hover='hover:bg-purple-600'>{translate('button')}</Button>
 					</a>
 					</HStack>

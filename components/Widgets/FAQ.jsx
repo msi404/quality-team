@@ -12,11 +12,11 @@ import {motion} from 'framer-motion'
 import classNames from 'classnames';
 import { useTranslation} from 'next-i18next'
 
-function FAQ ()
+function FAQ ({background})
 {
 	const {t:translate} = useTranslation('faq')
 	return (
-		<ContainerFuild>
+		<ContainerFuild background={background}>
 			<HStack  responsive spacing='space-y-6'>
 				<VStack  responsive spacing='space-y-4 lg:pe-80'>
 					<Title animate width='max-w-xl' color='text-slate-800'>{translate('title')}</Title>

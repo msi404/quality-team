@@ -8,7 +8,12 @@ import { RiMenu2Fill } from "react-icons/ri";
 import { useRouter } from 'next/router'
 function Navigation ()
 {
-	const { locale } = useRouter()
+
+	const { locale,push} = useRouter()
+		const onLinkClicked = () =>
+	{
+		push('https://web.facebook.com/profile.php?id=61551994790268')
+	}
 	return (
 		<div className='fixed w-screen top-0 bg-gradient-to-r z-10 text-slate-100 font-semibold from-indigo-900 to-indigo-600 lg:px-16 px-6 flex flex-wrap items-center lg:py-0 py-2'>
 				<div className='flex-1 flex justify-between items-center'>
@@ -42,7 +47,7 @@ function Navigation ()
 							<ContactModal />
 						</li>
 						<li>
-					<Button variant='bg-green-400' active='active:bg-green-400' hover='hover:bg-green-600'>
+					<Button onClick={onLinkClicked} variant='bg-green-400' active='active:bg-green-400' hover='hover:bg-green-600'>
                         Subsecribe Now
                     </Button>
 						</li>

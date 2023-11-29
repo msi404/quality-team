@@ -12,10 +12,16 @@ import Button from '@/components/ui/Button'
 import OurBrandsImage from '@/public/our-brands.png'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import {useRouter} from 'next/router'
 import { useTranslation} from 'next-i18next'
 
 function Clients ()
 {
+	const {push} = useRouter()
+	const onLinkClicked = () =>
+	{
+		push('https://web.facebook.com/profile.php?id=61551994790268')
+	}
 	const {t:translate} = useTranslation('clients')
 	return (
 		<ContainerFluid background='bg-slate-100'>
@@ -57,7 +63,7 @@ function Clients ()
 							</VStack>
 							</List>
 							</HStack>
-							<Button variant='bg-green-400' active='active:bg-green-400' hover='hover:bg-green-600'>{translate('button')}</Button>
+								<Button onClick={onLinkClicked} variant='bg-green-400' active='active:bg-green-400' hover='hover:bg-green-600'>{translate('button')}</Button>
 						</motion.div>
 					</VStack>
 				</HStack>

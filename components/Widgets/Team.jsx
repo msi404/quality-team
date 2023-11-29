@@ -11,6 +11,8 @@ import VisualArt from '@/public/visual_art.jpg'
 import Designer from '@/public/designer.jpg'
 import Hr from '@/public/hr.jpg'
 import Writer from '@/public/writer.jpg'
+import Photgrapher from '@/public/videographer_photographer.jpg'
+import Videographer from '@/public/videographer.jpg'
 import { motion } from 'framer-motion'
 import { useTranslation} from 'next-i18next'
 
@@ -52,15 +54,15 @@ function Team ()
 						<ItalicText animate color='text-slate-400'>{translate('thirdDescription')}</ItalicText>
 						</VStack>
 					</VStack>
-					{/* <VStack center spacing='space-y-5'>
+					<VStack center spacing='space-y-5'>
 					<motion.div initial={{opacity:0,translateY:"30px"}} whileInView={{opacity:1,translateY:"0px"}} viewport={{once:true, amount:1}}  className='h-64 w-64 overflow-hidden rounded-full relative'>
-							<Image className='absolute top-10 left-0' width={ 800 } height={ 800 } src={Writer} />
+							<Image className='absolute -top-16 left-0' width={ 1500 } height={ 1500 } src={Writer} />
 					</motion.div>
 						<VStack center>
 						<Header animate color='text-slate-700'>{translate('fourthName')}</Header>
 						<ItalicText animate color='text-slate-400'>{translate('fourthDescription')}</ItalicText>
 						</VStack>
-					</VStack> */}
+					</VStack>
 					<VStack center spacing='space-y-5'>
 					<motion.div initial={{opacity:0,translateY:"30px"}} whileInView={{opacity:1,translateY:"0px"}} viewport={{once:true, amount:1}}  className='h-64 w-64 overflow-hidden rounded-full relative'>
 							<Image className='absolute -top-8 left-0' width={ 500 } height={ 500 } src={ VisualArt } />
@@ -77,6 +79,24 @@ function Team ()
 						<VStack center>
 						<Header animate color='text-slate-700'>{translate('sixthName')}</Header>
 						<ItalicText animate color='text-slate-400'>{translate('sixthDescription')}</ItalicText>
+						</VStack>
+					</VStack>
+					<VStack center spacing='space-y-5'>
+					<motion.div initial={{opacity:0,translateY:"30px"}} whileInView={{opacity:1,translateY:"0px"}} viewport={{once:true, amount:1}}  className='h-64 w-64 overflow-hidden rounded-full relative'>
+							<Image className='absolute -top-16 left-0' width={ 500 } height={ 500 } src={ Videographer } />
+					</motion.div>
+						<VStack center>
+						<Header animate color='text-slate-700'>{translate('eighthName')}</Header>
+						<ItalicText animate color='text-slate-400'>{translate('eighthDecription')}</ItalicText>
+						</VStack>
+					</VStack>
+					<VStack center spacing='space-y-5'>
+					<motion.div initial={{opacity:0,translateY:"30px"}} whileInView={{opacity:1,translateY:"0px"}} viewport={{once:true, amount:1}}  className='h-64 w-64 overflow-hidden rounded-full relative'>
+							<Image className='absolute -top-24 left-0' width={ 500 } height={ 500 } src={ Photgrapher } />
+					</motion.div>
+						<VStack center>
+						<Header animate color='text-slate-700'>{translate('seventhName')}</Header>
+						<ItalicText animate color='text-slate-400'>{translate('seventhDescription')}</ItalicText>
 						</VStack>
 					</VStack>
 				</div>

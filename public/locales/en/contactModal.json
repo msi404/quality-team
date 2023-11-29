@@ -2,7 +2,7 @@
 	"header": "Get in touch with us",
 	"description": "Contact us on email, or send us a message on social media!",
 	"name": "Name",
-	"email": "Email",
+	"phone": "Phone",
 	"submit": "Submit",
 	"close": "Close"
 }

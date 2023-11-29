@@ -12,10 +12,17 @@ import Button from '@/components/ui/Button'
 import DestenationImage from '@/public/destenation-image.png'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import {useRouter} from 'next/router'
+
 import { useTranslation} from 'next-i18next'
 
 function Destinations ()
 {
+	const { push } = useRouter()
+		const onLinkClicked = () =>
+	{
+		push('https://web.facebook.com/profile.php?id=61551994790268')
+	}
 	const {t:translate} = useTranslation('destinations')
 	return (
 		<ContainerFluid>
@@ -54,7 +61,7 @@ function Destinations ()
 							</VStack>
 							</List>
 							</HStack>
-							<Button variant='bg-purple-400' active='active:bg-purple-400' hover='hover:bg-purple-600'>{translate('button')}</Button>
+							<Button onClick={onLinkClicked} variant='bg-purple-400' active='active:bg-purple-400' hover='hover:bg-purple-600'>{translate('button')}</Button>
 						</motion.div>
 					</VStack>
 					<VStack>

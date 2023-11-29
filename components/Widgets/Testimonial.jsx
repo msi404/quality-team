@@ -10,11 +10,11 @@ import * as Avatar from '@radix-ui/react-avatar';
 import { motion } from 'framer-motion'
 import { useTranslation} from 'next-i18next'
 
-function Testimonial ()
+function Testimonial ({background})
 {
 	const {t:translate} = useTranslation('testimonial')
 	return (
-		<ContainerFluid>
+		<ContainerFluid background={background}>
 			<VStack spacing='space-y-10'>
 			<div className='space-y-5 lg:space-y-10 text-center'>
 					<Text animate color='text-green-400'>{translate("fotonote")}</Text>

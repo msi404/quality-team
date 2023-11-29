@@ -5,6 +5,7 @@ import HStack from '@/components/ui/HStack'
 import Title from '@/components/ui/Title'
 import Description from '@/components/ui/Description'
 import Button from '@/components/ui/Button'
+import Link from 'next/link'
 import {motion} from 'framer-motion'
 import { useTranslation} from 'next-i18next'
 
@@ -18,11 +19,9 @@ function ContactModal ()
 	}
 	return (
 		<Dialog.Root open={isOpen}>
-			<div>
 				<Dialog.Trigger asChild>
 				<button onClick={onContactClickedHandler}>Contact Us</button>
 				</Dialog.Trigger>
-			</div>
 			<Dialog.Portal>
 				<Dialog.Overlay onClick={onContactClickedHandler} className='bg-slate-900/80 fixed inset-0' />
 				<motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}>
@@ -46,8 +45,8 @@ function ContactModal ()
 					</fieldset>
 					<fieldset>
 					<HStack spacing='space-x-5'>
-						<label>{translate('email')}:</label>
-						<input className='pl-2 w-72 h-8 border rounded-md shadow-lg' type='email' />
+						<label>{translate('phone')}:</label>
+						<input className='pl-2 w-72 h-8 border rounded-md shadow-lg' type='tel' />
 						</HStack>
 					</fieldset>
 					</VStack>
@@ -56,7 +55,9 @@ function ContactModal ()
 						<Dialog.Close asChild>
 							<Button variant='bg-red-400' active='active:bg-red-400' hover='hover:bg-red-500' width='w-24' onClick={ onContactClickedHandler }>{translate('close')}</Button>
 						</Dialog.Close>
-						<Button width='w-24' variant='bg-green-400' active='active:bg-green-400' hover='hover:bg-green-600'>{translate('submit')}</Button>	
+						<Link href='mailto:ismail.merced3@gmail.com? cc=skywalker@starwars.com& bcc=leia@starwars.com& subject=May%20the%20Force%20be%20with%20you&body=May%20the%20Force%20be%20with%20us%20all%3A%0D%0A%0D%0ACheers%2C%0D%0AHappy%20Customer'>
+							<Button width='w-24' variant='bg-green-400' active='active:bg-green-400' hover='hover:bg-green-600'>{translate('submit')}</Button>	
+						</Link>
 					</HStack>
 				</div>
 				</VStack>
