@@ -10,7 +10,7 @@ class MyDocument extends Document
   render = () => (
     <Html dir={ this.props.locale === 'ar' ? 'rtl' : 'ltr' } lang={ this.props.locale }>
       <Head />
-      <body className='antialiased'>
+      <body className='antialiased mt-20'>
         <Main />
         <NextScript />
       </body>

@@ -7,7 +7,7 @@ function Card ( { children,animate,delay,margin} )
 		 from-indigo-900 to-indigo-600
 		 rounded-3xl p-7 lg:p-16
 		 flex flex-col justify-center
-		border border-slate-400 ${margin}`}>
+		 border shadow-xl shadow-green-500/30 border-gray-500 ${margin}`}>
 			{children}
 		</motion.div>
 	)

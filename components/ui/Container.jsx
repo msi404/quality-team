@@ -1,7 +1,7 @@
-function Container ( { children, background, backgroundImage} )
+function Container ( { children, background} )
 {
 	return (
-		<section className={`px-5 md:px-24 pt-10 pb-[14.4rem] bg-center bg-cover bg-no-repeat ${background}`} style={{backgroundImage: `url(${backgroundImage})`}}>
+		<section className={`px-5 md:px-24 md:py-24 pt-10 pb-[14.4rem] bg-center bg-cover bg-no-repeat ${background}`}>
 			{children}
 		</section>
 	)

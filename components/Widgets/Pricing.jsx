@@ -11,18 +11,22 @@ import ContainerFuild from '@/components/ui/ContainerFluid'
 import List from '@/components/ui/List'
 import ListItem from '@/components/ui/ListItem'
 import Card from '@/components/ui/Card'
+import { useTranslation } from 'next-i18next'
+import {motion} from 'framer-motion'
+
 function Pricing ()
 {
+	const {t:translate} = useTranslation('contactModal')
 	return (
 		<ContainerFuild background='bg-slate-100'>
 			<VStack center spacing='space-y-10'>
 				<VStack center spacing='space-y-3'>
-				<Fotonote color='text-green-400'>Pricing</Fotonote>
-				<Title color='text-slate-600'>Clean Business done For you</Title>
-				<Description color='text-slate-400'>Choose the package that suits your needs based on Domain Authority or Traffic.</Description>
+				<Text animate color='text-green-400'>Pricing</Text>
+				<Title animate color='text-slate-600'>Clean Business done For you</Title>
+				<Description animate color='text-slate-400'>Choose the package that suits your needs based on Domain Authority or Traffic.</Description>
 				</VStack>
-				<HStack responsive>
-					<Card margin='m-1'>
+					<motion.div className='flex flex-col justify-center items-center lg:flex-row lg:justify-start lg:items-start' initial={{opacity:0,translateY:"30px"}} whileInView={{opacity:1,translateY:'0px',transition:{'duration':0.5}}} viewport={{once:true,amount:0.30}}>
+						<Card margin='m-1'>
 						<VStack center spacing='space-y-10'>
 						<VStack>
 							<Header>Starter</Header>
@@ -169,7 +173,7 @@ function Pricing ()
 							<Button variant='bg-green-400' active='active:bg-green-400' hover='hover:bg-green-500'>Get Started</Button>
 						</VStack>
 					</Card>
-				</HStack>
+					</motion.div>
 			</VStack>
 		</ContainerFuild>
 	)

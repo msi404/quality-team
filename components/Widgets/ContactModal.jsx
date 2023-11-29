@@ -20,7 +20,7 @@ function ContactModal ()
 		<Dialog.Root open={isOpen}>
 			<div>
 				<Dialog.Trigger asChild>
-				<button className='py-5' onClick={onContactClickedHandler}>Contact Us</button>
+				<button onClick={onContactClickedHandler}>Contact Us</button>
 				</Dialog.Trigger>
 			</div>
 			<Dialog.Portal>

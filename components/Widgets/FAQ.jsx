@@ -8,6 +8,7 @@ import Desription from '@/components/ui/Description'
 import ContactModal from '@/components/Widgets/ContactModal'
 import { FaChevronDown } from "react-icons/fa";
 import { forwardRef } from 'react'
+import {motion} from 'framer-motion'
 import classNames from 'classnames';
 import { useTranslation} from 'next-i18next'
 
@@ -18,12 +19,13 @@ function FAQ ()
 		<ContainerFuild>
 			<HStack  responsive spacing='space-y-6'>
 				<VStack  responsive spacing='space-y-4 lg:pe-80'>
-					<Title width='max-w-xl' color='text-slate-800'>{translate('title')}</Title>
-					<Desription color='text-slate-400'>{translate('description')}</Desription>
+					<Title animate width='max-w-xl' color='text-slate-800'>{translate('title')}</Title>
+					<Desription animate color='text-slate-400'>{translate('description')}</Desription>
 					<ContactModal />
 				</VStack>
 				<VStack>
-  <Accordion.Root
+          <motion.div initial={{opacity:0,translateY:"30px"}} whileInView={{opacity:1,translateY:"0px",transition:{'duration':0.5,'delay':0.2}}} viewport={{once:true,amount:0.30}}>
+            <Accordion.Root
     className="bg-mauve6 max-w-4xl min-w-5xl w-96 lg:w-[600px] rounded-md"
     type="single"
     defaultValue="item-1"
@@ -66,6 +68,7 @@ function FAQ ()
       </AccordionContent>
     </AccordionItem>
   </Accordion.Root>
+      </motion.div>
 	</VStack>
 	</HStack>
 </ContainerFuild>
