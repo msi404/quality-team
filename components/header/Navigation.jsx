@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Switch from '@/components/ui/Switch/Switch'
 import { RiMenu2Fill } from "react-icons/ri";
 import { useRouter } from 'next/router'
+import {motion, AnimatePresence} from 'framer-motion'
 function Navigation ()
 {
 	const [isOpen,setIsOpen] = useState(false)
@@ -25,17 +26,25 @@ function Navigation ()
 		setIsOpen(false)
 	}
 	return (
-		<div className='fixed w-screen top-0 bg-gradient-to-r z-10 text-slate-100 font-semibold from-indigo-900 to-indigo-600 lg:px-16 px-6 flex flex-wrap items-center lg:py-0 py-2'>
+		<AnimatePresence>
+			<motion.div initial={{height: 100}} animate={{height: isOpen ? 400 : 100}} exit={{height: 100}} className='fixed overflow-hidden w-screen top-0 bg-gradient-to-r z-10 text-slate-100 font-semibold from-indigo-900 to-indigo-600 lg:px-16 px-6 flex flex-wrap items-center space-x-6 lg:space-x-0 lg:py-0 pb-10'>
 				<div className='flex-1 flex justify-between items-center'>
 				<Link onClick={resetMenu} className='p-5' href='/' locale={locale}>
 					<Image width={55} height={55} src={Logo} alt="" />
 				</Link>
 				</div>
+				<li>
+					<Button onClick={onLinkClicked} variant='bg-green-400' active='active:bg-green-400' hover='hover:bg-green-600'>
+                        Subsecribe Now
+                    </Button>
+						</li>
+				<li>
+				<Switch />
+				</li>
 					<button onClick={onMenuClicked}  className='cursor-pointer lg:hidden block p-5 text-xl'>
 						<RiMenu2Fill />
 					</button>
-				<input type="checkbox" className='hidden' id='menu-toggle' />
-			<div className={`${isOpen ? 'block' : 'hidden'} lg:flex lg:items-center lg:w-auto w-full`}>
+			<div className='lg:flex lg:items-center lg:w-auto w-full'>
 					<nav>
 					<ul className='lg:flex items-center space-y-5 lg:space-y-0 justify-between pt-4 lg:pt-0'>
 					<li>
@@ -58,18 +67,11 @@ function Navigation ()
 								Contact us
 							</Link>
 						</li>
-						<li>
-					<Button onClick={onLinkClicked} variant='bg-green-400' active='active:bg-green-400' hover='hover:bg-green-600'>
-                        Subsecribe Now
-                    </Button>
-						</li>
-						<li>
-						<Switch />
-						</li>
 					</ul>
 					</nav>
 				</div>
-			</div>
+			</motion.div>
+		</AnimatePresence>
 	)
 }
 
