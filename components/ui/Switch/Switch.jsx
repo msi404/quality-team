@@ -5,24 +5,18 @@ function Switch ()
 {
 	const [isChecked,setIsChecked] = useState(false)
 	const { push, pathname,reload,locale} = useRouter();
-	const onLanquageClickedHandler = () =>
+	const onLanquageClickedHandler = async () =>
 	{
 		if ( isChecked )
 		{
 			setIsChecked(false)
-			push( `/${ pathname }`, undefined, { locale: 'en' } )
-			setTimeout( () =>
-			{
-				reload()
-			},100)
+			await push( `/${ pathname }`, undefined, { locale: 'en' } )
+			reload()
 		} else
 		{
 			setIsChecked(true)
-			push( `/${ pathname }`, undefined, { locale: 'ar' } )
-			setTimeout( () =>
-			{
-				reload()
-			},100)
+			await push( `/${ pathname }`, undefined, { locale: 'ar' } )
+			reload()
 		}
 	}
 
@@ -32,7 +26,7 @@ function Switch ()
 	},[locale])
 
 	return (
-		<div className='flex lg:p-4 py-3 px-0 block'>
+		<div className='flex lg:p-4 py-3 px-0 '>
 			<label className='cursor-pointer pe-5' htmlFor="switch">{isChecked ? "عربي" : "English"}</label>
 			<input onChange={onLanquageClickedHandler} checked={isChecked} onClick={onLanquageClickedHandler}  id="switch" className={clasess.switch} type="checkbox"></input>
 		</div>

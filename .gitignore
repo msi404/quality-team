@@ -14,8 +14,6 @@
 /out/
 /dist/
 
-/lib/firebase.js/
-
 /.firebaserc
 /firebase.json
 /.firebase

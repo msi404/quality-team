@@ -1,7 +1,8 @@
-import ContainerFuild from '@/components/ui/ContainerFluid'
+import { useState,useEffect} from 'react'
+import {useMediaQuery} from 'react-responsive'
+import ContainerFuild from '@/components/ui/ContainerFluid';
 import HStack from '@/components/ui/HStack'
 import VStack from '@/components/ui/VStack'
-import Header from '@/components/ui/Header'
 import Button from '@/components/ui/Button'
 import Headline from '@/components/ui/Headline'
 import Fotonote from '@/components/ui/Fotonote'
@@ -14,12 +15,20 @@ import {useRouter} from 'next/router'
 import Image from 'next/image'
 function Metrics ()
 {
+
+	const [ isMinWidthMedium, setIsMinWidthMedium ] = useState( false );
+	const mediaQuery = useMediaQuery({ query: `(max-width: 1200px)` });
 	const { t: translate } = useTranslation( 'metrics' )
-		const {push} = useRouter()
+	const {push} = useRouter()
 	const onLinkClicked = () =>
 	{
 		push('https://web.facebook.com/profile.php?id=61551994790268')
 	}
+	useEffect(() => {
+    if (mediaQuery !== isMinWidthMedium) {
+      setIsMinWidthMedium(mediaQuery);
+    }
+  }, [mediaQuery, isMinWidthMedium]);
 	return (
 		<ContainerFuild>
 			<VStack spacing='space-y-24'>
@@ -41,7 +50,9 @@ function Metrics ()
 		</VStack>	
 		<Button onClick={onLinkClicked} variant='bg-green-400' active='active:bg-green-400' hover='hover:bg-green-600'>{translate('button')}</Button>			
 		</HStack>	
-		<HStack center padding='px-52'>
+
+			{ !isMinWidthMedium ? (
+			<HStack center padding='px-64'>
 			<VStack width='w-52' center>
 			<HStack center>
 			<Counter duration={ 9 } color='text-green-400' from={ 0 } to={ 2788 } />
@@ -61,7 +72,28 @@ function Metrics ()
 			<Counter duration={9} color='text-green-400' from={ 0 } to={7842} />
 			<h1 className='text-xs text-center lg:text-2xl' color='text-slate-700'>{translate('fourthMetricLabel')}</h1>
 			</VStack>
-		</HStack>
+			</HStack>
+				) : <VStack center padding='space-y-12'>
+			<VStack width='w-52' center>
+			<HStack center>
+			<Counter duration={ 9 } color='text-green-400' from={ 0 } to={ 2788 } />
+			<span className='md:text-5xl font-bold text-green-400'>+</span>
+			</HStack>
+			<h1 className='text-xs text-center lg:text-2xl' color='text-slate-700'>{translate('firstMetricLabel')}</h1>
+			</VStack>
+			<VStack width='w-52' center>
+			<Counter duration={9} color='text-green-400' from={ 0 } to={ 56286 } />
+			<h1 className='text-xs text-center lg:text-2xl' color='text-slate-700'>{translate('secondMetricLabel')}</h1>
+			</VStack>
+			<VStack width='w-52' center>
+			<Counter duration={9} color='text-green-400' from={ 0 } to={ 13347 } />
+			<h1 className='text-xs text-center lg:text-2xl' color='text-slate-700'>{translate('thirdMetricLabel')}</h1>
+			</VStack>
+			<VStack width='w-52' center>
+			<Counter duration={9} color='text-green-400' from={ 0 } to={7842} />
+			<h1 className='text-xs text-center lg:text-2xl' color='text-slate-700'>{translate('fourthMetricLabel')}</h1>
+			</VStack>
+			</VStack>}
 		</VStack>
 		</ContainerFuild>
 	)

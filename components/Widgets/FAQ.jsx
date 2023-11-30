@@ -5,7 +5,6 @@ import VStack from '@/components/ui/VStack'
 import Title from '@/components/ui/Title'
 import Text from '@/components/ui/Text'
 import Desription from '@/components/ui/Description'
-import ContactModal from '@/components/Widgets/ContactModal'
 import { FaChevronDown } from "react-icons/fa";
 import { forwardRef } from 'react'
 import {motion} from 'framer-motion'
@@ -21,7 +20,9 @@ function FAQ ({background})
 				<VStack  responsive spacing='space-y-4 lg:pe-80'>
 					<Title animate width='max-w-xl' color='text-slate-800'>{translate('title')}</Title>
 					<Desription animate color='text-slate-400'>{translate('description')}</Desription>
-					<ContactModal />
+          <a href="#">
+            <Text>Contact Us</Text>
+          </a>
 				</VStack>
 				<VStack>
           <motion.div initial={{opacity:0,translateY:"30px"}} whileInView={{opacity:1,translateY:"0px",transition:{'duration':0.5,'delay':0.2}}} viewport={{once:true,amount:0.30}}>
