@@ -25,7 +25,7 @@ function Banner ()
 		target: scope
 	} )
 	const x = useTransform( scrollYProgress, [ 0, 0.8], [ "1%", "-100%" ] )
-	  useEffect(() => {
+	useEffect(() => {
     if (mediaQuery !== isMinWidthMedium) {
       setIsMinWidthMedium(mediaQuery);
     }

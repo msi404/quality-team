@@ -1,6 +1,7 @@
 
-import {useState} from 'react'
+import {useState,useEffect} from 'react'
 import Button from '@/components/ui/Button';
+import {useMediaQuery} from 'react-responsive'
 import Image from 'next/image'
 import Link from 'next/link'
 import Switch from '@/components/ui/Switch/Switch'
@@ -9,7 +10,9 @@ import { useRouter } from 'next/router'
 import {motion, AnimatePresence} from 'framer-motion'
 function Navigation ()
 {
-	const [isOpen,setIsOpen] = useState(false)
+	const [ isOpen, setIsOpen ] = useState( false )
+	const [ isMinWidthMedium, setIsMinWidthMedium ] = useState( false );
+	const mediaQuery = useMediaQuery({ query: `(max-width: 1200px)` });
 	const Logo = "https://res.cloudinary.com/dckoelcja/image/upload/v1701282856/Logo_llmprk.png"
 
 	const { locale,push} = useRouter()
@@ -25,6 +28,15 @@ function Navigation ()
 	{
 		setIsOpen(false)
 	}
+	useEffect(() => {
+    if (mediaQuery !== isMinWidthMedium) {
+      setIsMinWidthMedium(mediaQuery);
+	}
+	if ( isMinWidthMedium )
+	{
+		setIsOpen(false)
+	}
+  }, [mediaQuery, isMinWidthMedium]);
 	return (
 		<AnimatePresence>
 			<motion.div initial={{height: 100}} animate={{height: isOpen ? 400 : 100}} exit={{height: 100}} className='fixed overflow-hidden w-screen top-0 bg-gradient-to-r z-10 text-slate-100 font-semibold from-indigo-900 to-indigo-600 lg:px-16 px-6 flex flex-wrap items-center space-x-6 lg:space-x-0 lg:py-0 pb-10'>
@@ -49,22 +61,30 @@ function Navigation ()
 					<ul className='lg:flex items-center space-y-5 lg:space-y-0 justify-between pt-4 lg:pt-0'>
 					<li>
 	                <Link onClick={resetMenu} className='lg:p-4 py-3 px-0 block' href='/about-us'>
-                        About us
+					<motion.div initial={{opacity: 0,translateY:'30px'}} whileInView={{opacity:1,translateY:'0px'}} viewport={{once:false}}>
+						About us	
+					</motion.div>
                     </Link>
 					</li>
-				<li>
+					<li>
 					<Link onClick={resetMenu} className='lg:p-4 py-3 px-0 block' href='/services'>
-                        Services
+                    <motion.div initial={{opacity: 0,translateY:'30px'}} whileInView={{opacity:1,translateY:'0px',transition: {delay:0.2}}} viewport={{once:false}}>
+						Services	
+					</motion.div>
                     </Link>
 						</li>
 						<li>
 					<Link onClick={resetMenu} className='lg:p-4 py-3 px-0 block' href='/our-work'>
-                        Our work
+                    <motion.div initial={{opacity: 0,translateY:'30px'}} whileInView={{opacity:1,translateY:'0px',transition: {delay:0.3}}} viewport={{once:false}}>
+						Our Work
+					</motion.div>
                     </Link>
 						</li>
 						<li className='lg:p-4 py-3 px-0 block'>
-							<Link href='#'>
-								Contact us
+					<Link href='#'>
+					<motion.div initial={{opacity: 0,translateY:'30px'}} whileInView={{opacity:1,translateY:'0px',transition: {delay:0.4}}} viewport={{once:false}}>
+						Contact Us
+					</motion.div>
 							</Link>
 						</li>
 					</ul>
