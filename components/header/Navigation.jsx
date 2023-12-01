@@ -39,17 +39,12 @@ function Navigation ()
   }, [mediaQuery, isMinWidthMedium]);
 	return (
 		<AnimatePresence>
-			<motion.div initial={{height: 100}} animate={{height: isOpen ? 400 : 100}} exit={{height: 100}} className='fixed overflow-hidden w-screen top-0 bg-gradient-to-r z-10 text-slate-100 font-semibold from-indigo-900 to-indigo-600 lg:px-16 px-6 flex flex-wrap items-center space-x-6 lg:space-x-0 lg:py-0 pb-10'>
+			<motion.div initial={{height: 100}} animate={{height: isOpen ? 400 : 100}} exit={{height: 100}} className='fixed border-b border-slate-500 overflow-hidden w-screen top-0 bg-gradient-to-r z-10 text-slate-100 font-semibold from-indigo-900 to-indigo-600 lg:px-16 px-6 flex flex-wrap items-center space-x-6 lg:space-x-0 lg:py-0 pb-10'>
 				<div className='flex-1 flex justify-between items-center'>
-				<Link onClick={resetMenu} className='p-5' href='/' locale={locale}>
+				<Link onClick={resetMenu} className='py-5' href='/' locale={locale}>
 					<Image width={55} height={55} src={Logo} alt="" />
 				</Link>
 				</div>
-				<li>
-					<Button onClick={onLinkClicked} variant='bg-green-400' active='active:bg-green-400' hover='hover:bg-green-600'>
-                        Subsecribe Now
-                    </Button>
-						</li>
 				<li>
 				<Switch />
 				</li>
