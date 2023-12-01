@@ -4,7 +4,7 @@ import {useMediaQuery} from 'react-responsive'
 import VStack from '@/components/ui/VStack';
 import Headline from '@/components/ui/Headline'
 import Description from '@/components/ui/Description'
-import images from '@/components/pages/our-work-page/images'
+import images from '@/components/pages/our-work-page/images.js'
 import Image from 'next/image'
 import { useTranslation } from 'next-i18next'
 
