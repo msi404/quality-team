@@ -1,6 +1,5 @@
 
 import {useState,useEffect} from 'react'
-import Button from '@/components/ui/Button';
 import {useMediaQuery} from 'react-responsive'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -15,11 +14,7 @@ function Navigation ()
 	const mediaQuery = useMediaQuery({ query: `(max-width: 1200px)` });
 	const Logo = "https://res.cloudinary.com/dckoelcja/image/upload/v1701282856/Logo_llmprk.png"
 
-	const { locale,push} = useRouter()
-		const onLinkClicked = () =>
-	{
-		push('https://web.facebook.com/profile.php?id=61551994790268')
-		}
+	const { locale} = useRouter()
 	const onMenuClicked = () =>
 	{
 		isOpen ? setIsOpen(false) : setIsOpen(true)
