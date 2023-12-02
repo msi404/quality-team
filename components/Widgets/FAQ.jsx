@@ -27,7 +27,7 @@ function FAQ ({background})
 				<VStack>
           <motion.div initial={{opacity:0,translateY:"30px"}} whileInView={{opacity:1,translateY:"0px",transition:{'duration':0.5,'delay':0.2}}} viewport={{once:true,amount:0.30}}>
             <Accordion.Root
-    className="bg-mauve6 max-w-4xl min-w-5xl lg:w-[600px] rounded-md"
+    className="bg-mauve6 max-w-4xl w-100 lg:w-[600px] rounded-md"
     type="single"
     defaultValue="item-1"
     collapsible

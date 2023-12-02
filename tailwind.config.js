@@ -14,6 +14,7 @@ module.exports = {
         ...violet,
       },
       spacing: {
+        '100': '23rem',
         '120': '34rem'
       },
       keyframes: {
