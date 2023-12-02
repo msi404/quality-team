@@ -1,9 +1,9 @@
-import easy_1 from '@/public/easy_1.jpeg';
-import day_to_day from '@/public/day_to_day.jpeg';
-import eib from '@/public/eib.jpeg';
-import heely_1 from '@/public/heely_1.jpeg';
-import heely_2 from '@/public/heely_2.jpeg';
-import imagine from '@/public/imagine.jpeg';
-import cinderella from '@/public/cinderella.jpeg';
+import built_qt from '@/public/build_qt.jpeg'
+import cinderella from '@/public/cinderella.jpeg'
+import day_to_day from '@/public/day_to_day.jpeg'
+import easy_fast from '@/public/easy_fast.jpeg'
+import easy_pocket from '@/public/easy_pocket.jpeg'
+import eib_education_with_the_best from '@/public/eib_education_with_the_best.jpeg'
+import eib_for_bright_future from '@/public/eib_for_bright_future.jpeg'
 
-export default [ easy_1, day_to_day, eib, heely_1, heely_2, imagine, cinderella ];
+export default [ built_qt,cinderella,day_to_day,easy_fast,eib_education_with_the_best,easy_pocket,eib_for_bright_future];

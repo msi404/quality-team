@@ -11,7 +11,7 @@ import Description from '@/components/ui/Description'
 import Button from '@/components/ui/Button'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import clients from '@/public/clients.png'
+import clients from '@/public/clients.jpeg'
 import {useRouter} from 'next/router'
 
 import { useTranslation} from 'next-i18next'

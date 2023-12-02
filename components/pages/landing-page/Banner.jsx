@@ -18,7 +18,7 @@ function Banner ()
             <Headline color='text-slate-100' width='max-w-xl'>{translate('header')}</Headline>
         <Description color='text-slate-200' width='md:w-120'>
           {translate('description')}
-        </Description>
+              </Description>
     </VStack>
       </div>
       <div className='mt-12'>

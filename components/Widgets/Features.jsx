@@ -8,7 +8,7 @@ import Fotonote from '@/components/ui/Fotonote'
 import List from '@/components/ui/List'
 import ListItem from '@/components/ui/ListItem'
 import Image from 'next/image'
-import features from '@/public/features.png'
+import features from '@/public/features.jpeg'
 import { motion } from 'framer-motion'
 import { useTranslation} from 'next-i18next'
 

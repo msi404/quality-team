@@ -7,11 +7,14 @@ import ItalicText from '@/components/ui/ItalicText'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { useTranslation } from 'next-i18next'
-import copy_writer from '@/public/copy_writer.jpg'
+import copy_writer from '@/public/copy_writer.jpeg'
+import photographer from '@/public/photographer.jpeg'
 import videographer from '@/public/videographer.jpg'
-import photographer from '@/public/photographer.jpg'
-import graphic_designer from '@/public/graphic_designer.jpg'
-import video_editor from '@/public/video_editor.jpg'
+import graphic_designer from '@/public/graphic_designer.jpeg'
+import video_editor from '@/public/video_editor.jpeg'
+import resercher from '@/public/resercher.jpeg';
+import hr from '@/public/hr.jpeg';
+import visual_art from '@/public/visual_art.jpeg'
 
 function Team ()
 {
@@ -24,15 +27,15 @@ function Team ()
 					<Description animate color='text-slate-600'>{translate('description')}</Description>
 				</VStack>
 				<div className='flex flex-col flex-wrap justify-center gap-24 items-center lg:flex-row'>
-					{/* <VStack center spacing='space-y-5'>
+					<VStack center spacing='space-y-5'>
 						<motion.div initial={{opacity:0,translateY:"30px"}} whileInView={{opacity:1,translateY:"0px"}} viewport={{once:true, amount:1}}  className='h-64 w-64 overflow-hidden rounded-full relative'>
-							<Image className='absolute -top-16 left-0' width={ 500 } height={ 500 } src={ designer } />
+							<Image className='absolute -top-16 left-0' width={ 500 } height={ 500 } src={ resercher } />
 						</motion.div>
 					<VStack center>
 							<Header animate color='text-slate-700'>{translate('firstName')}</Header>
 						<ItalicText animate color='text-slate-400'>{translate('firstDescription')}</ItalicText>
 					</VStack>
-					</VStack> */}
+					</VStack>
 					<VStack center spacing='space-y-5'>
 						<motion.div initial={{opacity:0,translateY:"30px"}} whileInView={{opacity:1,translateY:"0px"}} viewport={{once:true, amount:1}}  className='h-64 w-64 overflow-hidden rounded-full relative'>
 							<Image className='absolute -top-6 left-0' width={ 500 } height={ 500 } src={ video_editor } />
@@ -42,7 +45,7 @@ function Team ()
 							<ItalicText animate color='text-slate-400'>{translate('secondDescription')}</ItalicText>
 					</VStack>
 					</VStack>
-					{/* <VStack center spacing='space-y-5'>
+					<VStack center spacing='space-y-5'>
 					<motion.div initial={{opacity:0,translateY:"30px"}} whileInView={{opacity:1,translateY:"0px"}} viewport={{once:true, amount:1}}  className='h-64 w-64 overflow-hidden rounded-full relative'>
 							<Image className='absolute -top-8 left-0' width={ 500 } height={ 500 } src={ hr } />
 					</motion.div>
@@ -50,25 +53,25 @@ function Team ()
 						<Header animate color='text-slate-700'>{translate('thirdName')}</Header>
 						<ItalicText animate color='text-slate-400'>{translate('thirdDescription')}</ItalicText>
 						</VStack>
-					</VStack> */}
+					</VStack>
 					<VStack center spacing='space-y-5'>
 					<motion.div initial={{opacity:0,translateY:"30px"}} whileInView={{opacity:1,translateY:"0px"}} viewport={{once:true, amount:1}}  className='h-64 w-64 overflow-hidden rounded-full relative'>
-							<Image className='absolute top-12 left-0' width={ 1500 } height={ 1500 } src={copy_writer} />
+							<Image className='absolute -top-14 left-0' width={ 1500 } height={ 1500 } src={copy_writer} />
 					</motion.div>
 						<VStack center>
 						<Header animate color='text-slate-700'>{translate('fourthName')}</Header>
 						<ItalicText animate color='text-slate-400'>{translate('fourthDescription')}</ItalicText>
 						</VStack>
 					</VStack>
-					{/* <VStack center spacing='space-y-5'>
+					<VStack center spacing='space-y-5'>
 					<motion.div initial={{opacity:0,translateY:"30px"}} whileInView={{opacity:1,translateY:"0px"}} viewport={{once:true, amount:1}}  className='h-64 w-64 overflow-hidden rounded-full relative'>
-							<Image className='absolute -top-8 left-0' width={ 500 } height={ 500 } src={ visualart } />
+							<Image className='absolute -top-8 left-0' width={ 500 } height={ 500 } src={ visual_art } />
 					</motion.div>
 						<VStack center>
 						<Header animate color='text-slate-700'>{translate('fifthName')}</Header>
 						<ItalicText animate color='text-slate-400'>{translate('fifthDescription')}</ItalicText>
 						</VStack>
-					</VStack> */}
+					</VStack>
 					<VStack center spacing='space-y-5'>
 					<motion.div initial={{opacity:0,translateY:"30px"}} whileInView={{opacity:1,translateY:"0px"}} viewport={{once:true, amount:1}}  className='h-64 w-64 overflow-hidden rounded-full relative'>
 							<Image className='absolute -top-8 left-0' width={ 500 } height={ 500 } src={ graphic_designer } />

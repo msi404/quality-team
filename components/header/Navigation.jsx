@@ -3,6 +3,7 @@ import {useState,useEffect} from 'react'
 import {useMediaQuery} from 'react-responsive'
 import Image from 'next/image'
 import Link from 'next/link'
+import logo_white from '@/public/logo_white.png'
 import Switch from '@/components/ui/Switch/Switch'
 import { RiMenu2Fill } from "react-icons/ri";
 import { useRouter } from 'next/router'
@@ -12,7 +13,6 @@ function Navigation ()
 	const [ isOpen, setIsOpen ] = useState( false )
 	const [ isMinWidthMedium, setIsMinWidthMedium ] = useState( false );
 	const mediaQuery = useMediaQuery({ query: `(max-width: 1200px)` });
-	const Logo = "https://res.cloudinary.com/dckoelcja/image/upload/v1701282856/Logo_llmprk.png"
 
 	const { locale} = useRouter()
 	const onMenuClicked = () =>
@@ -37,7 +37,7 @@ function Navigation ()
 			<motion.div initial={{height: 100}} animate={{height: isOpen ? 400 : 100}} exit={{height: 100}} className='fixed border-b border-slate-500 overflow-hidden w-screen top-0 bg-gradient-to-r z-10 text-slate-100 font-semibold from-indigo-900 to-indigo-600 lg:px-16 px-6 flex flex-wrap items-center space-x-6 lg:space-x-0 lg:py-0 pb-10'>
 				<div className='flex-1 flex justify-between items-center'>
 				<Link onClick={resetMenu} className='py-5' href='/' locale={locale}>
-					<Image width={55} height={55} src={Logo} alt="" />
+					<Image width={55} height={55} src={logo_white} alt="" />
 				</Link>
 				</div>
 				<li>
@@ -46,7 +46,7 @@ function Navigation ()
 					<button onClick={onMenuClicked}  className='cursor-pointer lg:hidden block p-5 text-xl'>
 						<RiMenu2Fill />
 					</button>
-			<div className='lg:flex lg:items-center lg:w-auto w-full'>
+			<div className='flex flex-col justify-center items-center text-2xl lg:text-base text-center lg:flex lg:items-center lg:w-auto w-full'>
 					<nav>
 					<ul className='lg:flex items-center space-y-5 lg:space-y-0 justify-between pt-4 lg:pt-0'>
 					<li>
