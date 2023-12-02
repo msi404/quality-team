@@ -26,10 +26,10 @@ function Team ()
 					<Headline animate width='max-w-4xl' color='text-slate-700'>{translate('headline')}</Headline>
 					<Description animate color='text-slate-600'>{translate('description')}</Description>
 				</VStack>
-				<div className='flex flex-col flex-wrap justify-center gap-24 items-center lg:flex-row'>
+				<div className='flex flex-col flex-wrap justify-center gap-24 items-center lg:flex-row max-w-6xl mx-auto'>
 					<VStack center spacing='space-y-5'>
 						<motion.div initial={{opacity:0,translateY:"30px"}} whileInView={{opacity:1,translateY:"0px"}} viewport={{once:true, amount:1}}  className='h-64 w-64 overflow-hidden rounded-full relative'>
-							<Image className='absolute -top-16 left-0' width={ 500 } height={ 500 } src={ resercher } />
+							<Image unoptimized className='absolute -top-16 left-0' width={ 500 } height={ 500 } src={ resercher } />
 						</motion.div>
 					<VStack center>
 							<Header animate color='text-slate-700'>{translate('firstName')}</Header>
@@ -38,7 +38,7 @@ function Team ()
 					</VStack>
 					<VStack center spacing='space-y-5'>
 						<motion.div initial={{opacity:0,translateY:"30px"}} whileInView={{opacity:1,translateY:"0px"}} viewport={{once:true, amount:1}}  className='h-64 w-64 overflow-hidden rounded-full relative'>
-							<Image className='absolute -top-6 left-0' width={ 500 } height={ 500 } src={ video_editor } />
+							<Image unoptimized className='absolute -top-6 left-0' width={ 500 } height={ 500 } src={ video_editor } />
 						</motion.div>
 					<VStack center>
 					<Header animate color='text-slate-700'>{translate('secondName')}</Header>
@@ -47,7 +47,7 @@ function Team ()
 					</VStack>
 					<VStack center spacing='space-y-5'>
 					<motion.div initial={{opacity:0,translateY:"30px"}} whileInView={{opacity:1,translateY:"0px"}} viewport={{once:true, amount:1}}  className='h-64 w-64 overflow-hidden rounded-full relative'>
-							<Image className='absolute -top-8 left-0' width={ 500 } height={ 500 } src={ hr } />
+							<Image unoptimized className='absolute -top-8 left-0' width={ 500 } height={ 500 } src={ hr } />
 					</motion.div>
 						<VStack center>
 						<Header animate color='text-slate-700'>{translate('thirdName')}</Header>
@@ -56,7 +56,7 @@ function Team ()
 					</VStack>
 					<VStack center spacing='space-y-5'>
 					<motion.div initial={{opacity:0,translateY:"30px"}} whileInView={{opacity:1,translateY:"0px"}} viewport={{once:true, amount:1}}  className='h-64 w-64 overflow-hidden rounded-full relative'>
-							<Image className='absolute -top-14 left-0' width={ 1500 } height={ 1500 } src={copy_writer} />
+							<Image unoptimized className='absolute -top-14 left-0' width={ 1500 } height={ 1500 } src={copy_writer} />
 					</motion.div>
 						<VStack center>
 						<Header animate color='text-slate-700'>{translate('fourthName')}</Header>
@@ -65,7 +65,7 @@ function Team ()
 					</VStack>
 					<VStack center spacing='space-y-5'>
 					<motion.div initial={{opacity:0,translateY:"30px"}} whileInView={{opacity:1,translateY:"0px"}} viewport={{once:true, amount:1}}  className='h-64 w-64 overflow-hidden rounded-full relative'>
-							<Image className='absolute -top-8 left-0' width={ 500 } height={ 500 } src={ visual_art } />
+							<Image unoptimized className='absolute -top-8 left-0' width={ 500 } height={ 500 } src={ visual_art } />
 					</motion.div>
 						<VStack center>
 						<Header animate color='text-slate-700'>{translate('fifthName')}</Header>
@@ -74,7 +74,7 @@ function Team ()
 					</VStack>
 					<VStack center spacing='space-y-5'>
 					<motion.div initial={{opacity:0,translateY:"30px"}} whileInView={{opacity:1,translateY:"0px"}} viewport={{once:true, amount:1}}  className='h-64 w-64 overflow-hidden rounded-full relative'>
-							<Image className='absolute -top-8 left-0' width={ 500 } height={ 500 } src={ graphic_designer } />
+							<Image unoptimized className='absolute -top-8 left-0' width={ 500 } height={ 500 } src={ graphic_designer } />
 					</motion.div>
 						<VStack center>
 						<Header animate color='text-slate-700'>{translate('sixthName')}</Header>
@@ -83,7 +83,7 @@ function Team ()
 					</VStack>
 					<VStack center spacing='space-y-5'>
 					<motion.div initial={{opacity:0,translateY:"30px"}} whileInView={{opacity:1,translateY:"0px"}} viewport={{once:true, amount:1}}  className='h-64 w-64 overflow-hidden rounded-full relative'>
-							<Image className='absolute -top-16 left-0' width={ 500 } height={ 500 } src={ videographer } />
+							<Image unoptimized className='absolute -top-16 left-0' width={ 500 } height={ 500 } src={ videographer } />
 					</motion.div>
 						<VStack center>
 						<Header animate color='text-slate-700'>{translate('eighthName')}</Header>
@@ -92,7 +92,7 @@ function Team ()
 					</VStack>
 					<VStack center spacing='space-y-5'>
 					<motion.div initial={{opacity:0,translateY:"30px"}} whileInView={{opacity:1,translateY:"0px"}} viewport={{once:true, amount:1}}  className='h-64 w-64 overflow-hidden rounded-full relative'>
-							<Image className='absolute -top-24 left-0' width={ 500 } height={ 500 } src={ photographer } />
+							<Image unoptimized className='absolute -top-24 left-0' width={ 500 } height={ 500 } src={ photographer } />
 					</motion.div>
 						<VStack center>
 						<Header animate color='text-slate-700'>{translate('seventhName')}</Header>

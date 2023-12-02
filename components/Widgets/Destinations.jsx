@@ -65,7 +65,7 @@ function Destinations ()
 						</motion.div>
 					</VStack>
 					<VStack>
-						<Image className='rounded-3xl' width={500} height={500} src={clients} />
+						<Image unoptimized className='rounded-3xl' width={500} height={500} src={clients} />
 					</VStack>
 				</HStack>
 			</div>

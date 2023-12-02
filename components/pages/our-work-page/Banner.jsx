@@ -29,7 +29,7 @@ function Banner ()
 				<div className='flex flex-wrap gap-3'>
 							{ images.map( ( image, index ) => (
 							<div key={index} className='ps-2'>
-									<Image className='rounded-3xl' width={400} height={400} src={image}/>
+									<Image unoptimized className='rounded-3xl' width={400} height={400} src={image}/>
 							</div>
 					))}
 				</div>
@@ -37,7 +37,7 @@ function Banner ()
 				) : ( <div>
 						<div className='flex justify-center gap-5 flex-wrap'>
 						{ images.map( ( image ) => (
-						<Image className='rounded-3xl' width={250} height={250} src={image}/>
+						<Image unoptimized className='rounded-3xl' width={250} height={250} src={image}/>
 					))}
 						</div>
 				</div>)}

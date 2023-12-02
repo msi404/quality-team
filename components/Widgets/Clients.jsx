@@ -28,7 +28,7 @@ function Clients ()
 			<div className='flex justify-center'>
 				<HStack responsive spacing='space-y-10'>
 					<VStack>
-						<Image className='rounded-3xl' width={500} height={500} src={destinations} />
+						<Image unoptimized className='rounded-3xl' width={500} height={500} src={destinations} />
 					</VStack>
 					<VStack spacing='space-y-10' width='lg:ps-16'>
 						<Header animate color='text-green-400'>{translate('header')}</Header>

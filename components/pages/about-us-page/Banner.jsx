@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from 'react'
+import { useRef, useEffect, useState} from 'react'
 import {useMediaQuery} from 'react-responsive'
 import Headline from '@/components/ui/Headline'
 import Button from '@/components/ui/Button'
@@ -44,7 +44,7 @@ function Banner ()
 				<motion.div style={{x}} className='flex '>
 							{ images.map( ( image, index ) => (
 							<div key={index} className='ps-2'>
-									<Image className='rounded-3xl' width={600} height={600} src={image}/>
+										<Image unoptimized className='rounded-3xl' width={600} height={600} src={image}/>
 							</div>
 					))}
 				</motion.div>
@@ -52,7 +52,7 @@ function Banner ()
 				) : ( <ImagesCollection>
 						<div className='flex justify-center gap-5 flex-wrap'>
 						{ images.map( ( image ) => (
-						<Image className='rounded-3xl' width={250} height={250} src={image}/>
+						<Image unoptimized className='rounded-3xl' width={250} height={250} src={image}/>
 					))}
 						</div>
 				</ImagesCollection>)}
