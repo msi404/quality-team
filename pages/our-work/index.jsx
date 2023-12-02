@@ -18,7 +18,7 @@ export async function getStaticProps ( { locale } )
 {
   return {
     props: {
-      ... (await serverSideTranslations(locale,['ourworkBanner','contactModal']))
+      ... (await serverSideTranslations(locale,['ourworkBanner','contactModal','navbar']))
     }
   }
 }

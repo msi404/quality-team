@@ -55,42 +55,42 @@ function Metrics ()
 			<HStack center padding='px-64'>
 			<VStack width='w-52' center>
 			<HStack center>
-			<Counter duration={ 9 } color='text-green-400' from={ 0 } to={ 2788 } />
+			<Counter duration={ 3} color='text-green-400' from={ 0 } to={90} />
 			<span className='md:text-5xl font-bold text-green-400'>+</span>
 			</HStack>
 			<h1 className='text-xs text-center lg:text-2xl' color='text-slate-700'>{translate('firstMetricLabel')}</h1>
 			</VStack>
 			<VStack width='w-52' center>
-			<Counter duration={9} color='text-green-400' from={ 0 } to={ 56286 } />
+			<Counter duration={3} color='text-green-400' from={ 0 } to={ 150 } />
 			<h1 className='text-xs text-center lg:text-2xl' color='text-slate-700'>{translate('secondMetricLabel')}</h1>
 			</VStack>
 			<VStack width='w-52' center>
-			<Counter duration={9} color='text-green-400' from={ 0 } to={ 13347 } />
+			<Counter duration={4} color='text-green-400' from={ 0 } to={ 350 } />
 			<h1 className='text-xs text-center lg:text-2xl' color='text-slate-700'>{translate('thirdMetricLabel')}</h1>
 			</VStack>
 			<VStack width='w-52' center>
-			<Counter duration={9} color='text-green-400' from={ 0 } to={7842} />
+			<Counter duration={4} color='text-green-400' from={ 0 } to={543} />
 			<h1 className='text-xs text-center lg:text-2xl' color='text-slate-700'>{translate('fourthMetricLabel')}</h1>
 			</VStack>
 			</HStack>
 				) : <VStack center padding='space-y-12'>
 			<VStack width='w-52' center>
 			<HStack center>
-			<Counter duration={ 9 } color='text-green-400' from={ 0 } to={ 2788 } />
+			<Counter duration={ 3 } color='text-green-400' from={ 0 } to={ 90 } />
 			<span className='md:text-5xl font-bold text-green-400'>+</span>
 			</HStack>
 			<h1 className='text-xs text-center lg:text-2xl' color='text-slate-700'>{translate('firstMetricLabel')}</h1>
 			</VStack>
 			<VStack width='w-52' center>
-			<Counter duration={9} color='text-green-400' from={ 0 } to={ 56286 } />
+			<Counter duration={3} color='text-green-400' from={ 0 } to={ 150 } />
 			<h1 className='text-xs text-center lg:text-2xl' color='text-slate-700'>{translate('secondMetricLabel')}</h1>
 			</VStack>
 			<VStack width='w-52' center>
-			<Counter duration={9} color='text-green-400' from={ 0 } to={ 13347 } />
+			<Counter duration={4} color='text-green-400' from={ 0 } to={ 350 } />
 			<h1 className='text-xs text-center lg:text-2xl' color='text-slate-700'>{translate('thirdMetricLabel')}</h1>
 			</VStack>
 			<VStack width='w-52' center>
-			<Counter duration={9} color='text-green-400' from={ 0 } to={7842} />
+			<Counter duration={4} color='text-green-400' from={ 0 } to={543} />
 			<h1 className='text-xs text-center lg:text-2xl' color='text-slate-700'>{translate('fourthMetricLabel')}</h1>
 			</VStack>
 			</VStack>}
