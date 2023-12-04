@@ -6,8 +6,8 @@ import logo_3 from '@/public/logo_3.png'
 function Brands ()
 {
 	return (
-		<HStack width='max-w-md mx-auto' center spaceBetween>
-			<Image unoptimized width={ 100 } height={ 100 } src={logo_1} />
+		<HStack width='max-w-md mx-auto px-5 items-center' center spaceBetween>
+			<Image className='pt-5' unoptimized width={ 100 } height={ 100 } src={logo_1} />
 			<Image unoptimized width={ 100 } height={ 100 } src={logo_2} />
 			<Image unoptimized width={ 100 } height={ 100 } src={logo_3} />
 		</HStack>
