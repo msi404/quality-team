@@ -14,7 +14,7 @@ function Banner ()
         <HStack center responsive spacing='space-y-8'>
            <VStack responsive spacing='space-y-8'>
             <div className='mt-12'>
-        <VStack spacing='space-y-10'>
+            <VStack spacing='space-y-10'>
             <Headline color='text-slate-100' width='max-w-xl'>{translate('header')}</Headline>
         <Description color='text-slate-200' width='md:w-120'>
           {translate('description')}
