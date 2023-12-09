@@ -49,7 +49,7 @@ const handleScroll = () => {
 	}, [mediaQuery,isMinWidthMedium]);
 	return (
 		<AnimatePresence>
-			<motion.div initial={{height: 100}} animate={{height: isOpen ? 500 : 100}} exit={{height: 100}} className='fixed border-b border-slate-500 overflow-hidden w-screen top-0 bg-gradient-to-r z-10 text-slate-100 font-semibold from-indigo-900 to-indigo-600 lg:px-16 px-6 flex flex-wrap items-center space-x-6 lg:space-x-0 lg:py-0 pb-10'>
+				<motion.div initial={{height: 100}} animate={{height: isOpen ? 500 : 100}} exit={{height: 100}} className='fixed border-b border-slate-500 overflow-hidden w-screen top-0 bg-gradient-to-r z-10 text-slate-100 font-semibold from-indigo-900 to-indigo-600 lg:px-16 px-6 flex flex-wrap items-center space-x-6 lg:space-x-0 lg:py-0 pb-10'>
 				<div className='flex-1 flex justify-between items-center'>
 				<Link onClick={resetMenu} className='py-5' href='/' locale={locale}>
 					<Image unoptimized width={70} height={70} src={logo} alt="" />
@@ -103,7 +103,7 @@ const handleScroll = () => {
 					</nav>
 				</div>
 			</motion.div>
-		</AnimatePresence>
+	</AnimatePresence>
 	)
 }
 
