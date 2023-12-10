@@ -9,7 +9,6 @@ import { motion } from 'framer-motion'
 import { useTranslation } from 'next-i18next'
 import copy_writer from '@/public/copy_writer.jpeg'
 import photographer from '@/public/photographer.jpeg'
-import videographer from '@/public/videographer.jpg'
 import video_editor from '@/public/video_editor.jpeg'
 import resercher from '@/public/resercher.jpeg';
 import hr from '@/public/hr.jpeg';
@@ -69,15 +68,6 @@ function Team ()
 						<VStack center>
 						<Header animate color='text-slate-700'>{translate('fifthName')}</Header>
 						<ItalicText animate color='text-slate-400'>{translate('fifthDescription')}</ItalicText>
-						</VStack>
-					</VStack>
-					<VStack center spacing='space-y-5'>
-					<motion.div initial={{opacity:0,translateY:"30px"}} whileInView={{opacity:1,translateY:"0px"}} viewport={{once:true, amount:1}}  className='h-64 w-64 overflow-hidden rounded-full relative'>
-							<Image unoptimized className='absolute -top-16 left-0' width={ 500 } height={ 500 } src={ videographer } />
-					</motion.div>
-						<VStack center>
-						<Header animate color='text-slate-700'>{translate('eighthName')}</Header>
-						<ItalicText animate color='text-slate-400'>{translate('eighthDecription')}</ItalicText>
 						</VStack>
 					</VStack>
 					<VStack center spacing='space-y-5'>
