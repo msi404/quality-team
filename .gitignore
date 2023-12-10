@@ -19,10 +19,7 @@ firebase-debug.log
 /.env
 .env
 
-/.firebaserc
-/firebase.json
 /.firebase
-
 # production
 /build
 
