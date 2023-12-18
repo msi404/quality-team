@@ -7,12 +7,13 @@ import ItalicText from '@/components/ui/ItalicText'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { useTranslation } from 'next-i18next'
-import copy_writer from '@/public/copy_writer.jpeg'
+import director from '@/public/director.jpeg'
 import photographer from '@/public/photographer.jpeg'
 import video_editor from '@/public/video_editor.jpeg'
 import resercher from '@/public/resercher.jpeg';
 import hr from '@/public/hr.jpeg';
 import visual_art from '@/public/visual_art.jpeg'
+import web_developer from '@/public/web_developer.png'
 
 function Team ()
 {
@@ -27,7 +28,7 @@ function Team ()
 				<div className='flex flex-col flex-wrap justify-center gap-24 items-center lg:flex-row max-w-6xl mx-auto'>
 					<VStack center spacing='space-y-5'>
 						<motion.div initial={{opacity:0,translateY:"30px"}} whileInView={{opacity:1,translateY:"0px"}} viewport={{once:true, amount:1}}  className='h-64 w-64 overflow-hidden rounded-full relative'>
-							<Image unoptimized className='absolute -top-16 left-0' width={ 500 } height={ 500 } src={ resercher } />
+							<Image unoptimized className='absolute -top-12 left-0' width={ 500 } height={ 500 } src={ web_developer } />
 						</motion.div>
 					<VStack center>
 							<Header animate color='text-slate-700'>{translate('firstName')}</Header>
@@ -54,7 +55,7 @@ function Team ()
 					</VStack>
 					<VStack center spacing='space-y-5'>
 					<motion.div initial={{opacity:0,translateY:"30px"}} whileInView={{opacity:1,translateY:"0px"}} viewport={{once:true, amount:1}}  className='h-64 w-64 overflow-hidden rounded-full relative'>
-							<Image unoptimized className='absolute -top-14 left-0' width={ 1500 } height={ 1500 } src={copy_writer} />
+							<Image unoptimized className='absolute -top-16 left-0' width={ 1500 } height={ 1500 } src={director} />
 					</motion.div>
 						<VStack center>
 						<Header animate color='text-slate-700'>{translate('fourthName')}</Header>
@@ -75,8 +76,17 @@ function Team ()
 							<Image unoptimized className='absolute -top-24 left-0' width={ 500 } height={ 500 } src={ photographer } />
 					</motion.div>
 						<VStack center>
+						<Header animate color='text-slate-700'>{translate('sixthName')}</Header>
+						<ItalicText animate color='text-slate-400'>{translate('sixthDescription')}</ItalicText>
+						</VStack>
+					</VStack>
+					<VStack center spacing='space-y-5'>
+					<motion.div initial={{opacity:0,translateY:"30px"}} whileInView={{opacity:1,translateY:"0px"}} viewport={{once:true, amount:1}}  className='h-64 w-64 overflow-hidden rounded-full relative'>
+							<Image unoptimized className='absolute -top-24 left-0' width={ 500 } height={ 500 } src={ resercher } />
+					</motion.div>
+						<VStack center>
 						<Header animate color='text-slate-700'>{translate('seventhName')}</Header>
-						<ItalicText animate color='text-slate-400'>{translate('seventhDescription')}</ItalicText>
+						<ItalicText animate color='text-slate-400'>{translate('seventhDecription')}</ItalicText>
 						</VStack>
 					</VStack>
 				</div>

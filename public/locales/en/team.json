@@ -1,20 +1,18 @@
 {
 	"headline": "Meet our team of SEO Experts, Developers, Writers & Designers",
 	"description": "Meet our team of SEO Experts, Developers, Writers & Designers",
-	"firstName": "Ali",
-	"firstDescription": "Graphic Designer, Resercher",
+	"firstName": "Ismail",
+	"firstDescription": "Web Developer",
 	"secondName": "Bassam",
 	"secondDescription": "Video Editor",
 	"thirdName": "Hamza",
 	"thirdDescription": "Hr",
-	"fourthName": "Abdullah",
-	"fourthDescription": "Copywriter",
+	"fourthName": "Sadiq",
+	"fourthDescription": "Director",
 	"fifthName": "Taha",
 	"fifthDescription": "Visual Art",
-	"sixthName": "Montather",
-	"sixthDescription": "Graphic Designer",
-	"seventhName": "Akram",
-	"seventhDescription": "Videographer, Photographer",
-	"eighthName": "Noor",
-	"eighthDecription": "Videographer"
+	"sixthName": "Akram",
+	"sixthDescription": "Videographer, Photographer",
+	"seventhName": "Ali",
+	"seventhDecription": "Graphic Designer, Resercher"
 }

@@ -41,7 +41,7 @@ function Testimonial ({background})
 					</div>
 					<motion.div initial={{scale:0}} whileInView={{scale:1,transition: {'delay': 0.5}}} viewport={{once:true,amount:0.8}} className='flex items-center gap-5 text-slate-50'>
 						<div>
-							<Image width={100} height={100} src={logo_2} />
+							<Image unoptimized width={100} height={100} src={logo_2} />
 						</div>
 					<VStack>
 					<Text>The English International School- Baghdad</Text>
@@ -62,7 +62,7 @@ function Testimonial ({background})
 					</div>
 					<motion.div initial={{scale:0}} whileInView={{scale:1,transition:{'delay':0.3}}} viewport={{once:true}} className='flex items-center gap-5 text-slate-50'>
 						<div>
-							<Image width={100} height={100} src={logo_3} />
+							<Image unoptimized width={100} height={100} src={logo_3} />
 						</div>
 							<VStack>
 								<Text>Easy</Text>
