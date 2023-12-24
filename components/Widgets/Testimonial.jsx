@@ -6,8 +6,8 @@ import Card from '@/components/ui/Card'
 import Header from '@/components/ui/Header'
 import VStack from '@/components/ui/VStack'
 import Brands from '@/components/Widgets/Brands'
-import logo_2 from '@/public/logo_2.png';
-import logo_3 from '@/public/logo_3.png';
+import eisb from '@/public/eisb.png';
+import easy from '@/public/easy.png';
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { useTranslation} from 'next-i18next'
@@ -41,7 +41,7 @@ function Testimonial ({background})
 					</div>
 					<motion.div initial={{scale:0}} whileInView={{scale:1,transition: {'delay': 0.5}}} viewport={{once:true,amount:0.8}} className='flex items-center gap-5 text-slate-50'>
 						<div>
-							<Image unoptimized width={100} height={100} src={logo_2} />
+							<Image unoptimized width={100} height={100} src={eisb} />
 						</div>
 					<VStack>
 					<Text>The English International School- Baghdad</Text>
@@ -62,7 +62,7 @@ function Testimonial ({background})
 					</div>
 					<motion.div initial={{scale:0}} whileInView={{scale:1,transition:{'delay':0.3}}} viewport={{once:true}} className='flex items-center gap-5 text-slate-50'>
 						<div>
-							<Image unoptimized width={100} height={100} src={logo_3} />
+							<Image unoptimized width={100} height={100} src={easy} />
 						</div>
 							<VStack>
 								<Text>Easy</Text>

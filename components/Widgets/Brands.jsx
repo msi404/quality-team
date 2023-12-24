@@ -1,15 +1,15 @@
 import HStack from '@/components/ui/HStack';
 import Image from 'next/image'
-import logo_1 from '@/public/logo_1.png'
-import logo_2 from '@/public/logo_2.png'
-import logo_3 from '@/public/logo_3.png'
+import easy from '@/public/easy.png'
+import eisb from '@/public/eisb.png'
+import selsey from '@/public/selsey.png'
 function Brands ()
 {
 	return (
 		<HStack width='max-w-md mx-auto px-5 items-center' center spaceBetween>
-			<Image className='pt-5' unoptimized width={ 100 } height={ 100 } src={logo_1} />
-			<Image unoptimized width={ 100 } height={ 100 } src={logo_2} />
-			<Image unoptimized width={ 100 } height={ 100 } src={logo_3} />
+			<Image className='pt-5' unoptimized width={ 100 } height={ 100 } src={selsey} />
+			<Image unoptimized width={ 100 } height={ 100 } src={easy} />
+			<Image unoptimized width={ 100 } height={ 100 } src={eisb} />
 		</HStack>
 	)
 }

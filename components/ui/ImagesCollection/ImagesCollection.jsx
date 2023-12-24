@@ -1,5 +1,4 @@
 import classes from '@/components/ui/ImagesCollection/ImagesCollection.module.css'
-
 function ImagesCollection ( { children } )
 {
 	return (

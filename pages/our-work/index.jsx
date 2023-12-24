@@ -1,24 +1,25 @@
 import {Fragment} from 'react'
-import Banner from '@/components/pages/our-work-page/Banner';
+import PortifolioMarquee from '@/components/Widgets/portifolio-marquee/PortifolioMarquee'
+import GalleryCarousel from '@/components/Widgets/gallery-carousel/GalleryCarousel'
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
-
 function Page ()
 {
 	return (
 		<Fragment>
-			<Banner />
+			<GalleryCarousel />
+			<PortifolioMarquee />
 		</Fragment>
 	)
 }
 
 export default Page;
 
-
 export async function getStaticProps ( { locale } )
 {
   return {
     props: {
-      ... (await serverSideTranslations(locale,['ourworkBanner','contactModal','navbar']))
+      ... (await serverSideTranslations(locale,['navbar','prtifolioMarquee']))
     }
   }
 }
+
