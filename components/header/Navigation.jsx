@@ -3,7 +3,7 @@ import {useState,useEffect} from 'react'
 import {useMediaQuery} from 'react-responsive'
 import Image from 'next/image'
 import Link from 'next/link'
-import logo from '@/public/logo.png'
+import logo from '@/public/Logo.png'
 import Switch from '@/components/ui/Switch/Switch'
 import { RiMenu2Fill } from "react-icons/ri";
 import { useRouter } from 'next/router'
